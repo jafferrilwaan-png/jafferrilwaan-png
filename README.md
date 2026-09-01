@@ -1,18 +1,13 @@
 <div align="center">
 
-<!-- ══════════════════════════════════════════════════════════
-     AURA RADAR SCANNING BANNER
-══════════════════════════════════════════════════════════ -->
+<!-- ══════════ AURA RADAR BANNER ══════════ -->
 <img src="./aura_banner.jpg" width="100%" alt="AURA — Sub-Surface Scanning Interface" />
 
 <br/>
 
-<!-- ══════════════════════════════════════════════════════════
-     ANIMATED NEON TYPING IDENTITY
-══════════════════════════════════════════════════════════ -->
+<!-- ══════════ ANIMATED TYPING HEADER ══════════ -->
 <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=28&duration=2000&pause=800&color=C084FC&center=true&vCenter=true&repeat=true&width=800&height=70&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Disaster+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Accessibility+Systems;7+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
 
-<br/>
 <p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
 
 <p align="center">
@@ -35,16 +30,43 @@
 ---
 
 <!-- ══════════════════════════════════════════════════════════
-     🧑‍💻 ANIMATED ENGINEER CHARACTER (SVG — Live Animation)
+     🧑‍💻 CHARACTER SHOWCASE — 2×2 GRID
 ══════════════════════════════════════════════════════════ -->
 
-<div align="center">
-  <img src="./engineer_character.svg" width="100%" alt="Jaffer Rilwaan — Animated Engineer & Systems Architect at Workstation" />
-</div>
+### 🧑‍💻 The Engineer Behind The Code
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="./char1.svg" width="320" alt="Software Engineer — Isometric" />
+      <br/>
+      <sub><b>⚡ Systems Architect</b> — Full-Stack & IoT Engineering</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="./char2.svg" width="320" alt="Programmer — Cuate Style" />
+      <br/>
+      <sub><b>🛰️ Embedded Hardware</b> — ESP32 & Sensor Firmware</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="./char3.svg" width="320" alt="Programmer — Bro Cartoon" />
+      <br/>
+      <sub><b>🌐 Frontend Engineer</b> — React, Three.js & WebGL</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="./char4.svg" width="320" alt="Programmer — Amico Isometric" />
+      <br/>
+      <sub><b>🏗️ Backend Architect</b> — Node.js, MongoDB & APIs</sub>
+    </td>
+  </tr>
+</table>
 
 <img src="./pulse_divider.svg" width="100%" />
 
 ---
+
+<!-- ══════════ MANIFEST ══════════ -->
 
 <div align="center">
 <img src="./radar_spin.svg" width="80" height="80" />
@@ -68,12 +90,10 @@
 
 ---
 
-<!-- ══════════════════════════════════════════════════════════
-     PROJECT SHOWCASE
-══════════════════════════════════════════════════════════ -->
+<!-- ══════════ PROJECTS ══════════ -->
 
 <div align="center">
-<img src="./projects.jpg" width="95%" alt="Project Showcase — 6 Flagship Deployments" />
+<img src="./projects.jpg" width="95%" alt="Project Showcase" />
 </div>
 
 ### 🚀 Complete Project Arsenal — 7 Live Deployments
@@ -172,35 +192,25 @@
 
 ---
 
-<!-- ══════════════════════════════════════════════════════════
-     🕹️ PAC-MAN STREAK CARD + CONTRIBUTION SNAKE
-══════════════════════════════════════════════════════════ -->
+<!-- ══════════ PAC-MAN STREAK ══════════ -->
 
 ### 🕹️ GitHub Streak — PAC-DEV Edition
 
 <div align="center">
-
-<!-- Animated Pac-Man streak card (always loads — SVG in repo) -->
-<img src="./pacman_streak.svg" width="96%" alt="Pac-Man GitHub Streak" />
-
-<br/><br/>
-
-<!-- Live Pac-Man contribution graph — generated daily by GitHub Action -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jafferrilwaan-png/jafferrilwaan-png/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jafferrilwaan-png/jafferrilwaan-png/output/github-contribution-grid-snake.svg" />
-  <img alt="Pac-Man eats my contributions" src="https://raw.githubusercontent.com/jafferrilwaan-png/jafferrilwaan-png/output/github-contribution-grid-snake.svg" width="96%" />
-</picture>
-
+  <img src="./pacman_streak.svg" width="96%" alt="Pac-Man GitHub Streak" />
+  <br/><br/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jafferrilwaan-png/jafferrilwaan-png/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jafferrilwaan-png/jafferrilwaan-png/output/github-contribution-grid-snake.svg" />
+    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/jafferrilwaan-png/jafferrilwaan-png/output/github-contribution-grid-snake.svg" width="96%" />
+  </picture>
 </div>
 
 <img src="./pulse_divider.svg" width="100%" />
 
 ---
 
-<!-- ══════════════════════════════════════════════════════════
-     TECH STACK VISUAL + SKILL ICONS
-══════════════════════════════════════════════════════════ -->
+<!-- ══════════ TECH STACK ══════════ -->
 
 <div align="center">
 <img src="./tech_stack.jpg" width="95%" alt="Full-Stack & Hardware Engineering Arsenal" />
@@ -233,5 +243,5 @@
 ---
 
 <div align="center">
-  <sub>⚡ Systems designed & engineered by <b>Jaffer Rilwaan V</b> — Lead Systems Architect • Full-Stack & IoT Engineer</sub>
+  <sub>⚡ Designed & engineered by <b>Jaffer Rilwaan V</b> — Lead Systems Architect • Full-Stack & IoT Engineer</sub>
 </div>
