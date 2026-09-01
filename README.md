@@ -23,6 +23,31 @@
   <img src="https://img.shields.io/badge/Status-⚡ Active Engineering-22C55E?style=for-the-badge" />
 </p>
 
+
+
+<!-- ══════════ AURA RADAR BANNER ══════════ -->
+<img src="./aura_banner.jpg" width="100%" alt="AURA — Sub-Surface Scanning Interface" />
+
+<br/>
+
+<!-- ══════════ ANIMATED TYPING HEADER ══════════ -->
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=28&duration=2000&pause=800&color=C084FC&center=true&vCenter=true&repeat=true&width=800&height=70&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Disaster+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Accessibility+Systems;7+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
+
+<p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>&nbsp;
+  <a href="mailto:tactical@aurasystem.dev">
+    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>&nbsp;
+  <a href="https://github.com/jafferrilwaan-png?tab=repositories">
+    <img src="https://img.shields.io/badge/GitHub-7%20Projects-9333EA?style=for-the-badge&logo=github&logoColor=white" />
+  </a>&nbsp;
+  <img src="https://img.shields.io/badge/Status-⚡ Active Engineering-22C55E?style=for-the-badge" />
+</p>
+
 </div>
 
 <img src="./pulse_divider.svg" width="100%" />
@@ -194,16 +219,23 @@
 
 <!-- ══════════ PAC-MAN STREAK ══════════ -->
 
-### 🕹️ GitHub Streak — PAC-DEV Edition
+### ⚡ Live GitHub Analytics
 
 <div align="center">
-  <img src="./pacman_streak.svg" width="96%" alt="Pac-Man GitHub Streak" />
-  <br/><br/>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jafferrilwaan-png/jafferrilwaan-png/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jafferrilwaan-png/jafferrilwaan-png/output/github-contribution-grid-snake.svg" />
-    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/jafferrilwaan-png/jafferrilwaan-png/output/github-contribution-grid-snake.svg" width="96%" />
-  </picture>
+
+<!-- Animated stats panel — always loads, no external service needed -->
+<img src="./stats_panel.svg" width="96%" alt="Live Engineering Stats — Contributions, Streak, Languages" />
+
+<br/><br/>
+
+<!-- Animated contribution graph — fills in cell by cell -->
+<img src="./contribution_graph.svg" width="96%" alt="GitHub Contribution Activity Graph" />
+
+<br/><br/>
+
+<!-- Pac-Man streak card -->
+<img src="./pacman_streak.svg" width="96%" alt="Pac-Man GitHub Streak Stats" />
+
 </div>
 
 <img src="./pulse_divider.svg" width="100%" />
