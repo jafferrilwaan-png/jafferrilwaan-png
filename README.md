@@ -1,101 +1,42 @@
-<!-- ANIMATED HEADER BANNER: GALAXY THEME -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:311B92,100:00BCD4&height=250&section=header&text=Jaffer%20Rilwaan%20V&fontSize=50&fontColor=ffffff&animation=twinkling&desc=ECE%20Student%20%7C%20Vibe%20Coder%20%7C%20Robotics%20Enthusiast&descAlignY=75&descAlign=62" width="100%"/>
+
+  <!-- ─── CYBERNETIC ANIMATED HEADER ─── -->
+  <img src="https://capsule-render.vercel.app/render?type=waving&color=gradient&customColorList=1,2,3,20&height=220&section=header&text=JAFFER%20RILWAAN%20V&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Lead%20Systems%20Architect%20%7C%20Full-Stack%20%26%20IoT%20Engineer&descFontSize=16&descAlignY=62&descAlign=50" width="100%" alt="Header Banner" />
+
+  <br/>
+
+  <!-- ─── DYNAMIC TYPING SVG ─── -->
+  <a href="https://github.com/jafferrilwaan-png">
+    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&size=20&duration=2800&pause=1000&color=C084FC&center=true&vCenter=true&width=650&height=50&lines=Lead+Systems+Architect+%40+A.U.R.A.+System;Building+Sub-Surface+Disaster+Rescue+Tech+(SIH+2026);Full-Stack+Developer+%7C+React+%E2%80%A2+Node+%E2%80%A2+Three.js;Embedded+Hardware+%7C+ESP32+%E2%80%A2+LoRa+%E2%80%A2+Sensor+Arrays" alt="Typing SVG" />
+  </a>
+
+  <br/>
+
+  <!-- ─── SOCIAL QUICK LINKS ─── -->
+  <p align="center">
+    <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386" target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    &nbsp;
+    <a href="https://github.com/jafferrilwaan-png/A.U.R.A-System" target="_blank">
+      <img src="https://img.shields.io/badge/SIH_2026-AURA_System-A855F7?style=for-the-badge&logo=target&logoColor=white" alt="AURA System" />
+    </a>
+    &nbsp;
+    <a href="mailto:tactical@aurasystem.dev">
+      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    </a>
+  </p>
+
 </div>
 
-<br>
+---
 
-<!-- GALAXY DIVIDER -->
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Cosmic Divider" />
-</div>
+### 🎮 Player Profile HUD & Stats
 
-<!-- DASHBOARD GRID: ABOUT & SKILLS -->
-<table align="center" width="100%" style="border-collapse: collapse; border: none;">
-  <tr>
-    <td width="55%" valign="top" style="border: none;">
-      <h3 align="center">🌌 About Me</h3>
-      <ul>
-        <li>🎓 1st-Year <b>Electronics & Communication Engineering</b> student at Panimalar.</li>
-        <li>🚀 Building hackathon projects with team <b>Neural Nexus</b>.</li>
-        <li>🤖 Integrating <b>Arduino, Motor Drivers & Sensor Arrays</b>.</li>
-        <li>💬 Ask me about: <b>Python, C, SQL, and Prompt Engineering</b>.</li>
-      </ul>
-    </td>
-    <td width="45%" valign="top" align="center" style="border: none;">
-      <h3>💫 Tech Arsenal</h3>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=py,c,postgres,mysql,react,vite,supabase,arduino,git,github&theme=dark&perline=5" alt="Tech Stack Icons" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Cosmic Divider" />
-</div>
-
-<!-- DASHBOARD GRID: PROJECTS -->
-<table align="center" width="100%" style="border-collapse: collapse; border: none;">
-  <tr>
-    <td colspan="2" style="border: none;"><h3 align="center">✨ Featured Projects</h3></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" style="border: none;">
-      <br>
-      <b>🧠 AXON & HealthNavAI</b><br>
-      <i>AI-driven applications utilizing modern web and cloud technologies.</i>
-      <br><br>
-    </td>
-    <td width="50%" align="center" style="border: none;">
-      <br>
-      <b>⚙️ Titan Omni-Core</b><br>
-      <i>Human Following Robot powered by complex hardware systems.</i>
-      <br><br>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" style="border: none;">
-      <br>
-      <b>🚑 Accident Detection & Emergency Response</b><br>
-      <i>Innovative automated safety system presented at the IConIC 2K26.</i>
-      <br><br>
-    </td>
-  </tr>
-</table>
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Cosmic Divider" />
-</div>
-
-<!-- DASHBOARD GRID: ANALYTICS -->
-<h3 align="center">🌠 Developer Analytics</h3>
-<p align="center"><i>(Stats update dynamically)</i></p>
-
-<table align="center" width="100%" style="border: none;">
-  <tr>
-    <td align="center" width="50%" style="border: none;">
-      <img src="https://github-readme-stats.vercel.app/api?username=jafferrilwaan-png&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&v=2" alt="GitHub Stats" width="100%" />
-    </td>
-    <td align="center" width="50%" style="border: none;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jafferrilwaan-png&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&v=2" alt="Top Languages" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" style="border: none;">
-      <img src="https://streak-stats.demolab.com/?user=jafferrilwaan-png&theme=tokyonight&hide_border=true&background=0D1117&v=2" alt="GitHub Streak" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" style="border: none;">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=jafferrilwaan-png&bg_color=0D1117&color=00BCD4&line=311B92&point=FFFFFF&area=true&hide_border=true&v=2" alt="Activity Graph" width="100%" />
-    </td>
-  </tr>
-</table>
-
-<!-- ANIMATED FOOTER -->
-<div align="center">
-  <br>
-  <i>"Consistently building, learning, and vibing with code."</i>
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:00BCD4,100:311B92&height=100&section=footer" width="100%"/>
-</div>
+```yaml
+[CLASS]          : Lead Systems Architect & Embedded Firmware Engineer
+[AFFILIATION]    : Panimalar Engineering College (ECE)
+[SPECIALIZATION] : Sub-Surface Cavity Detection, 3D WebGL HUDs, IoT Sensor Telemetry
+[CURRENT QUEST]  : Smart India Hackathon (SIH 2026) — Project A.U.R.A.
+[CORE STACK]     : React • TypeScript • Three.js • Node.js • ESP32 • Python • Tailwind
+[SYSTEM STATUS]  : ⚡ Online & Deploying Swarm Protocols
