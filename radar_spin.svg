@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Radar rings -->
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#C084FC" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="60" cy="60" r="35" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="60" cy="60" r="20" fill="none" stroke="#C084FC" stroke-width="0.5" opacity="0.3"/>
+  <!-- Crosshairs -->
+  <line x1="60" y1="10" x2="60" y2="110" stroke="#22D3EE" stroke-width="0.3" opacity="0.2"/>
+  <line x1="10" y1="60" x2="110" y2="60" stroke="#22D3EE" stroke-width="0.3" opacity="0.2"/>
+  <!-- Rotating scan arm -->
+  <line x1="60" y1="60" x2="60" y2="10" stroke="#22D3EE" stroke-width="1.5" filter="url(#glow)" opacity="0.8">
+    <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <!-- Pulse ring -->
+  <circle cx="60" cy="60" r="10" fill="none" stroke="#22D3EE" stroke-width="1" filter="url(#glow)">
+    <animate attributeName="r" values="5;55;5" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0;0.9" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Center dot -->
+  <circle cx="60" cy="60" r="4" fill="#C084FC" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

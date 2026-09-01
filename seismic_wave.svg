@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="80" viewBox="0 0 900 80">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Seismic wave line 1 (cyan) -->
+  <polyline points="0,40 60,40 80,15 100,65 120,40 160,40 180,20 200,60 220,40 260,40 280,10 300,70 320,40 380,40 400,25 420,55 440,40 500,40 520,18 540,62 560,40 600,40 620,30 640,50 660,40 720,40 740,12 760,68 780,40 840,40 860,28 880,52 900,40"
+        fill="none" stroke="#22D3EE" stroke-width="1.5" filter="url(#glow)" opacity="0.7">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3s" repeatCount="indefinite"/>
+  </polyline>
+  <!-- Seismic wave line 2 (purple, offset) -->
+  <polyline points="0,40 50,40 70,22 90,58 110,40 150,40 170,28 190,52 210,40 250,40 270,16 290,64 310,40 370,40 390,32 410,48 430,40 490,40 510,20 530,60 550,40 590,40 610,35 630,45 650,40 710,40 730,18 750,62 770,40 830,40 850,30 870,50 900,40"
+        fill="none" stroke="#C084FC" stroke-width="1" filter="url(#glow)" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </polyline>
+  <!-- Status label -->
+  <text x="20" y="15" font-family="monospace" font-size="9" fill="#22D3EE" opacity="0.6">◉ SEISMIC MONITORING ACTIVE</text>
+  <text x="700" y="15" font-family="monospace" font-size="9" fill="#C084FC" opacity="0.6">FREQ: 40kHz ◉</text>
+</svg>
