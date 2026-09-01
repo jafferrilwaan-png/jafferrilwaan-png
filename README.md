@@ -1,29 +1,29 @@
 <div align="center">
 
-  <!-- ─── 3D ANIMATED DEVELOPER & HARDWARE RIG (GITHUB HOSTED CDN) ─── -->
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700px" alt="3D Developer Workstation Animation" />
+  <!-- ─── 8K HIGH-TECH DEVELOPER WORKSPACE BANNER ─── -->
+  <img src="./banner.jpg" width="100%" alt="Jaffer Rilwaan Developer Workspace" />
 
   <br/><br/>
 
-  <!-- ─── DYNAMIC TYPING HEADER ─── -->
+  <!-- ─── DYNAMIC TYPING TITLE ─── -->
   <a href="https://github.com/jafferrilwaan-png">
-    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&size=24&duration=2600&pause=1000&color=C084FC&center=true&vCenter=true&width=700&height=60&lines=JAFFER+RILWAAN+V;Lead+Systems+Architect+%40+A.U.R.A.+Disaster+Tech;Building+Sub-Surface+Cavity+%26+Survivor+Detection;Full-Stack+Architect+%7C+React+%E2%80%A2+Three.js+%E2%80%A2+Node.js;Embedded+Hardware+%7C+ESP32+%E2%80%A2+LoRa+%E2%80%A2+Geophones" alt="Typing Banner" />
+    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&size=24&duration=2400&pause=1000&color=C084FC&center=true&vCenter=true&width=700&height=60&lines=JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Arrays;Building+High-Impact+Hardware+%26+Software+Systems" alt="Typing Banner" />
   </a>
 
-  <br/>
+  <p><b>Electronics & Communication Engineering @ Panimalar Engineering College</b></p>
 
-  <!-- ─── BADGES ─── -->
+  <!-- ─── QUICK BADGES ─── -->
   <p align="center">
     <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
     &nbsp;
-    <a href="https://github.com/jafferrilwaan-png/A.U.R.A-System" target="_blank">
-      <img src="https://img.shields.io/badge/SIH_2026-AURA_System-9333EA?style=for-the-badge&logo=radar&logoColor=white" alt="AURA System" />
-    </a>
-    &nbsp;
     <a href="mailto:tactical@aurasystem.dev">
       <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    </a>
+    &nbsp;
+    <a href="https://github.com/jafferrilwaan-png?tab=repositories">
+      <img src="https://img.shields.io/badge/GitHub-7_Repositories-9333EA?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repos" />
     </a>
   </p>
 
@@ -31,84 +31,82 @@
 
 ---
 
-### 🧬 Character Profile & Story
-
-```yaml
-[ARCHETYPE]      : Cyber-Physical Systems Architect & Full-Stack Developer
-[PRIMARY GUILD]  : Panimalar Engineering College (Electronics & Communication)
-[MISSION LOG]    : Engineering zero-latency sub-surface sensors & 3D WebGL HUDs for disaster rescue.
-[HARDWARE RIG]   : ESP32 Dual-Core • SX1262 LoRa Swarm • SM-24 Geophones • 40 kHz Transducers
-[ACTIVE QUEST]   : Smart India Hackathon (SIH 2026) — Flagship: Project A.U.R.A.
-[LIVE STATUS]    : 🟢 Compiling Firmware & Telemetry Algorithms
-```
+### 💼 About Me & Engineering Philosophy
+- 🔬 **Systems & Full-Stack Architect:** Designing low-latency IoT embedded systems, real-time 3D WebGL interfaces, and secure cloud platforms.
+- ⚡ **Core Technologies:** React, TypeScript, Three.js, Node.js, Express, MongoDB, ESP32, Arduino, and Python.
+- 🎯 **Mission:** Building practical, life-saving hardware and interactive digital experiences.
 
 ---
 
-### ⚡ Live Dynamic Analytics & Activity Streaks
-
-<div align="center">
-  <!-- FAST RELIABLE STREAK STATS -->
-  <img src="https://streak-stats.demolab.com/?user=jafferrilwaan-png&theme=tokyonight&background=06080D&border=C084FC&stroke=A855F7&ring=C084FC&fire=FF00CD&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=C084FC&dates=94A3B8" alt="GitHub Streak" width="85%" />
-</div>
-
----
-
-### 🚀 Flagship Projects & Quests
+### 🚀 Complete Project Portfolio
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">🛰️ A.U.R.A. System (SIH 2026)</h3>
-      <p align="center">
-        <a href="https://github.com/jafferrilwaan-png/A.U.R.A-System">
-          <img src="https://img.shields.io/badge/A.U.R.A-Sub--Surface_Life_Detection-9333EA?style=for-the-badge&logo=radar" alt="AURA" />
-        </a>
-      </p>
-      <p><b>Autonomous Sub-surface Cavity & Life Detection System</b> built for collapsed-structure search-and-rescue. Combines active 40 kHz ultrasonic Time-of-Flight radar, SM-24 piezoelectric geophones, NEO-6M satellite telemetry, and an interactive 3D WebGL tactical HUD.</p>
-      <p>
-        <code>React</code> • <code>Three.js</code> • <code>ESP32</code> • <code>LoRa SX1262</code> • <code>Tailwind</code>
-      </p>
+      <h3>🛰️ A.U.R.A. System (SIH 2026)</h3>
+      <p><b>Sub-Surface Life & Cavity Detection System</b></p>
+      <p>Autonomous hardware platform for disaster rescue. Combines 40 kHz ultrasonic Time-of-Flight radar, SM-24 piezoelectric geophones, NEO-6M satellite telemetry, and an interactive 3D WebGL tactical HUD.</p>
+      <p><code>TypeScript</code> • <code>Three.js</code> • <code>React</code> • <code>ESP32</code> • <code>LoRa SX1262</code></p>
+      <p><a href="https://github.com/jafferrilwaan-png/A.U.R.A-System"><b>➔ View A.U.R.A. System Repository</b></a></p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🔊 Silent Voice</h3>
-      <p align="center">
-        <a href="https://github.com/jafferrilwaan-png/silent-voice">
-          <img src="https://img.shields.io/badge/Silent_Voice-Assistive_Speech_Portal-06B6D4?style=for-the-badge&logo=soundcharts" alt="Silent Voice" />
-        </a>
-      </p>
-      <p><b>Assistive Speech & Communication Interface</b> empowering individuals with speech impairments to communicate through synthesized voice and responsive visual cues.</p>
-      <p>
-        <code>JavaScript</code> • <code>Web Speech API</code> • <code>Modern UI</code>
-      </p>
+      <h3>🏎️ Porsche 911 3D Showcase</h3>
+      <p><b>Interactive 3D WebGL Vehicle Experience</b></p>
+      <p>A high-performance 3D visualization showcase featuring real-time shader lighting, camera controls, and procedural material rendering for the iconic Porsche 911.</p>
+      <p><code>JavaScript</code> • <code>Three.js</code> • <code>WebGL</code> • <code>Tailwind CSS</code></p>
+      <p><a href="https://github.com/jafferrilwaan-png/porsche-911-3d-showcase"><b>➔ View Porsche 3D Repository</b></a></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">📊 CGPA Calculator</h3>
-      <p align="center">
-        <a href="https://github.com/jafferrilwaan-png/cgpa-calculator">
-          <img src="https://img.shields.io/badge/CGPA_Calculator-Academic_Analytics-10B981?style=for-the-badge&logo=calculator" alt="CGPA Calc" />
-        </a>
-      </p>
-      <p><b>Academic Grade & GPA Analytics Engine</b> calculating weighted semester performance, future target projections, and real-time visual insights.</p>
-      <p>
-        <code>React</code> • <code>Vite</code> • <code>Tailwind CSS</code>
-      </p>
+      <h3>🏥 AXON — Healthcare Platform</h3>
+      <p><b>Efficient Digital Health & Medical Records System</b></p>
+      <p>A streamlined, secure web application engineered for centralized healthcare records management, patient telemetry tracking, and hospital workflow optimization.</p>
+      <p><code>TypeScript</code> • <code>React</code> • <code>Node.js</code> • <code>MongoDB</code></p>
+      <p><a href="https://github.com/jafferrilwaan-png/AXON"><b>➔ View AXON Repository</b></a></p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🌉 Freedom Bridge</h3>
-      <p align="center">
-        <a href="https://github.com/jafferrilwaan-png">
-          <img src="https://img.shields.io/badge/Freedom_Bridge-Full--Stack_Hub-F59E0B?style=for-the-badge&logo=google-cloud" alt="Freedom Bridge" />
-        </a>
-      </p>
-      <p><b>Glassmorphism Social & Utility Bridge</b> providing clean UI collaboration workflows with modular full-stack database architectures.</p>
-      <p>
-        <code>Node.js</code> • <code>Express</code> • <code>MongoDB</code> • <code>React</code>
-      </p>
+      <h3>🔥 Agni Paravai</h3>
+      <p><b>High-Performance Full-Stack Web Platform</b></p>
+      <p>A robust modern web platform designed with modular architecture, high-concurrency event handling, and clean responsive UI design.</p>
+      <p><code>TypeScript</code> • <code>React</code> • <code>Tailwind CSS</code> • <code>Vite</code></p>
+      <p><a href="https://github.com/jafferrilwaan-png/agni-paravai"><b>➔ View Agni Paravai Repository</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔊 Silent Voice</h3>
+      <p><b>Assistive Speech & Communication Accessibility System</b></p>
+      <p>Assistive communication portal empowering individuals with speech impairments to communicate smoothly through real-time voice synthesis and interactive visual UI cards.</p>
+      <p><code>JavaScript</code> • <code>Web Speech API</code> • <code>Modern CSS</code></p>
+      <p><a href="https://github.com/jafferrilwaan-png/silent-voice"><b>➔ View Silent Voice Repository</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📊 CGPA Calculator</h3>
+      <p><b>Precision Academic Analytics & GPA Predictor</b></p>
+      <p>Academic grading calculator providing semester-by-semester grade point calculations, target grade forecasting, and dynamic chart visualizations.</p>
+      <p><code>React</code> • <code>Vite</code> • <code>Tailwind CSS</code> • <code>JavaScript</code></p>
+      <p><a href="https://github.com/jafferrilwaan-png/cgpa-calculator"><b>➔ View CGPA Calculator Repository</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>🌉 Freedom Bridge</h3>
+      <p><b>Full-Stack Collaboration & Utility Hub</b></p>
+      <p>A collaborative glassmorphic web application offering real-time community tools, modular database structures, and seamless user interaction.</p>
+      <p><code>Node.js</code> • <code>Express</code> • <code>MongoDB</code> • <code>React</code></p>
+      <p><a href="https://github.com/jafferrilwaan-png"><b>➔ View Freedom Bridge Platform</b></a></p>
     </td>
   </tr>
 </table>
+
+---
+
+### ⚡ Live Dynamic GitHub Contributions
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com/?user=jafferrilwaan-png&theme=tokyonight&background=06080D&border=C084FC&stroke=A855F7&ring=C084FC&fire=FF00CD&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=C084FC&dates=94A3B8" alt="GitHub Streak" width="85%" />
+</div>
 
 ---
 
@@ -135,5 +133,5 @@
 
 <div align="center">
   <br/>
-  <sub>Designed with ⚡ by <b>Jaffer Rilwaan V</b> • Lead Systems Architect</sub>
+  <sub>Designed with ⚡ by <b>Jaffer Rilwaan V</b> • Systems Architect & Full-Stack Engineer</sub>
 </div>
