@@ -1,0 +1,437 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06080f"/>
+      <stop offset="100%" stop-color="#0a0d1a"/>
+    </linearGradient>
+    <linearGradient id="monitorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1f35"/>
+      <stop offset="100%" stop-color="#071020"/>
+    </linearGradient>
+    <linearGradient id="screenGlow1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a3a"/>
+      <stop offset="100%" stop-color="#0a1a35"/>
+    </linearGradient>
+    <linearGradient id="deskGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5cba7"/>
+      <stop offset="100%" stop-color="#e8b491"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="chairGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d2d3a"/>
+      <stop offset="100%" stop-color="#1a1a28"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="cyanGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="purpleGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="screenBloom" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="8" result="b" in="SourceGraphic"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="headShadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Circuit pattern -->
+    <pattern id="circuit" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none"/>
+      <path d="M0,20 H15 M25,20 H40 M20,0 V15 M20,25 V40" stroke="#22D3EE" stroke-width="0.3" opacity="0.15"/>
+      <circle cx="20" cy="20" r="2" fill="none" stroke="#22D3EE" stroke-width="0.3" opacity="0.2"/>
+      <circle cx="0" cy="20" r="1" fill="#22D3EE" opacity="0.15"/>
+      <circle cx="40" cy="20" r="1" fill="#22D3EE" opacity="0.15"/>
+      <circle cx="20" cy="0" r="1" fill="#22D3EE" opacity="0.15"/>
+      <circle cx="20" cy="40" r="1" fill="#22D3EE" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <!-- ═══════════════ BACKGROUND ═══════════════ -->
+  <rect width="900" height="420" fill="url(#bgGrad)"/>
+  <rect width="900" height="420" fill="url(#circuit)" opacity="0.6"/>
+
+  <!-- Ambient glow behind setup -->
+  <ellipse cx="450" cy="280" rx="380" ry="100" fill="#7c3aed" opacity="0.04"/>
+  <ellipse cx="280" cy="200" rx="180" ry="80" fill="#22D3EE" opacity="0.04"/>
+  <ellipse cx="620" cy="200" rx="180" ry="80" fill="#C084FC" opacity="0.04"/>
+
+  <!-- ═══════════════ FLOATING CODE PARTICLES ═══════════════ -->
+  <!-- Left side floating code -->
+  <g opacity="0.55" font-family="'Courier New', monospace" font-size="9" fill="#22D3EE">
+    <text x="20" y="60">const sensor = new</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="4s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0.4" font-family="'Courier New', monospace" font-size="8" fill="#C084FC">
+    <text x="15" y="100">UltrasonicArray(40000)</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="5s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0.35" font-family="'Courier New', monospace" font-size="8" fill="#22D3EE">
+    <text x="20" y="140">await mesh.connect()</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="6s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0.3" font-family="'Courier New', monospace" font-size="7" fill="#64748B">
+    <text x="25" y="175">// LoRa SX1262 init...</text>
+  </g>
+
+  <!-- Right side floating code -->
+  <g opacity="0.5" font-family="'Courier New', monospace" font-size="9" fill="#C084FC">
+    <text x="720" y="60">useEffect(() =&gt; {</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-7;0,0" dur="4.5s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0.4" font-family="'Courier New', monospace" font-size="8" fill="#22D3EE">
+    <text x="730" y="95">render3DHUD(data)</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-9;0,0" dur="3.5s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0.35" font-family="'Courier New', monospace" font-size="8" fill="#C084FC">
+    <text x="720" y="130">}, [sensorFeed])</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="5.5s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0.25" font-family="'Courier New', monospace" font-size="7" fill="#64748B">
+    <text x="740" y="165">// WebGL Scene</text>
+  </g>
+
+  <!-- ═══════════════ DESK ═══════════════ -->
+  <rect x="100" y="290" width="700" height="18" rx="3" fill="url(#deskGrad)"/>
+  <rect x="100" y="290" width="700" height="4" rx="2" fill="#2a2a4a"/>
+  <!-- Desk legs -->
+  <rect x="130" y="308" width="12" height="60" rx="3" fill="#1a1a2e"/>
+  <rect x="758" y="308" width="12" height="60" rx="3" fill="#1a1a2e"/>
+
+  <!-- ═══════════════ LEFT MONITOR ═══════════════ -->
+  <!-- Monitor stand -->
+  <rect x="175" y="275" width="8" height="18" rx="2" fill="#2d2d3a"/>
+  <rect x="158" y="288" width="42" height="5" rx="2" fill="#2d2d3a"/>
+  <!-- Monitor frame -->
+  <rect x="90" y="120" width="230" height="160" rx="8" fill="#1a1a2e" filter="url(#purpleGlow)"/>
+  <!-- Screen -->
+  <rect x="98" y="128" width="214" height="143" rx="5" fill="url(#screenGlow1)"/>
+  <!-- Screen glow bloom -->
+  <rect x="98" y="128" width="214" height="143" rx="5" fill="#C084FC" opacity="0.03" filter="url(#screenBloom)">
+    <animate attributeName="opacity" values="0.02;0.06;0.02" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- LEFT SCREEN CONTENT: Code Editor -->
+  <!-- Line numbers -->
+  <g font-family="'Courier New', monospace" font-size="7" fill="#4a5568">
+    <text x="105" y="143">01</text><text x="105" y="153">02</text>
+    <text x="105" y="163">03</text><text x="105" y="173">04</text>
+    <text x="105" y="183">05</text><text x="105" y="193">06</text>
+    <text x="105" y="203">07</text><text x="105" y="213">08</text>
+    <text x="105" y="223">09</text><text x="105" y="233">10</text>
+    <text x="105" y="243">11</text><text x="105" y="253">12</text>
+    <text x="105" y="263">13</text>
+  </g>
+  <!-- Code lines -->
+  <g font-family="'Courier New', monospace" font-size="7.5">
+    <text x="120" y="143" fill="#C084FC">import</text><text x="155" y="143" fill="#e2e8f0"> { ESP32 } </text><text x="215" y="143" fill="#C084FC">from</text>
+    <text x="120" y="153" fill="#e2e8f0">'./firmware'</text>
+    <text x="120" y="163" fill="#22D3EE">const</text><text x="148" y="163" fill="#e2e8f0"> node = </text><text x="188" y="163" fill="#22D3EE">new</text>
+    <text x="120" y="173" fill="#e2e8f0">  ESP32.init({</text>
+    <text x="120" y="183" fill="#94a3b8">    freq: </text><text x="160" y="183" fill="#f97316">40000</text><text x="192" y="183" fill="#e2e8f0">,</text>
+    <text x="120" y="193" fill="#94a3b8">    lora: </text><text x="162" y="193" fill="#86efac">'SX1262'</text>
+    <text x="120" y="203" fill="#e2e8f0">  })</text>
+    <text x="120" y="213" fill="#22D3EE">async</text><text x="150" y="213" fill="#fbbf24"> function</text>
+    <text x="120" y="223" fill="#fbbf24">  scan</text><text x="148" y="223" fill="#e2e8f0">(depth) {</text>
+    <text x="120" y="233" fill="#94a3b8">  // ToF pulse</text>
+    <text x="120" y="243" fill="#22D3EE">  await</text><text x="151" y="243" fill="#e2e8f0"> node.ping()</text>
+    <text x="120" y="253" fill="#e2e8f0">  </text><text x="120" y="253" fill="#C084FC">return</text><text x="150" y="253" fill="#e2e8f0"> data</text>
+    <text x="120" y="263" fill="#e2e8f0">}</text>
+  </g>
+  <!-- Blinking cursor -->
+  <rect x="134" y="255" width="5" height="9" fill="#22D3EE" rx="1">
+    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+  </rect>
+  <!-- Active line highlight -->
+  <rect x="98" y="248" width="214" height="10" fill="#22D3EE" opacity="0.06" rx="1"/>
+
+  <!-- ═══════════════ RIGHT MONITOR ═══════════════ -->
+  <!-- Monitor stand -->
+  <rect x="617" y="275" width="8" height="18" rx="2" fill="#2d2d3a"/>
+  <rect x="600" y="288" width="42" height="5" rx="2" fill="#2d2d3a"/>
+  <!-- Monitor frame -->
+  <rect x="580" y="120" width="230" height="160" rx="8" fill="#1a1a2e" filter="url(#cyanGlow)"/>
+  <!-- Screen -->
+  <rect x="588" y="128" width="214" height="143" rx="5" fill="url(#monitorGrad)"/>
+
+  <!-- RIGHT SCREEN CONTENT: Radar / HUD -->
+  <!-- Radar background -->
+  <rect x="588" y="128" width="214" height="143" rx="5" fill="#050d1a"/>
+  <!-- Radar circles -->
+  <circle cx="695" cy="205" r="58" fill="none" stroke="#22D3EE" stroke-width="0.6" opacity="0.3"/>
+  <circle cx="695" cy="205" r="42" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+  <circle cx="695" cy="205" r="26" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.5"/>
+  <circle cx="695" cy="205" r="12" fill="none" stroke="#22D3EE" stroke-width="0.8" opacity="0.6"/>
+  <!-- Crosshairs -->
+  <line x1="637" y1="205" x2="753" y2="205" stroke="#22D3EE" stroke-width="0.4" opacity="0.3"/>
+  <line x1="695" y1="147" x2="695" y2="263" stroke="#22D3EE" stroke-width="0.4" opacity="0.3"/>
+  <!-- Rotating scan arm -->
+  <line x1="695" y1="205" x2="695" y2="147" stroke="#22D3EE" stroke-width="1.5" opacity="0.9" filter="url(#cyanGlow)">
+    <animateTransform attributeName="transform" type="rotate" from="0 695 205" to="360 695 205" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <!-- Radar blips -->
+  <circle cx="718" cy="178" r="3" fill="#22D3EE" opacity="0.9" filter="url(#cyanGlow)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="673" cy="225" r="2.5" fill="#C084FC" opacity="0.9" filter="url(#purpleGlow)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="730" cy="215" r="2" fill="#22D3EE" opacity="0.7">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" dur="3s" begin="2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Center dot -->
+  <circle cx="695" cy="205" r="3" fill="#22D3EE" filter="url(#cyanGlow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <!-- HUD labels -->
+  <g font-family="'Courier New', monospace" font-size="6" fill="#22D3EE" opacity="0.7">
+    <text x="592" y="138">◉ AURA SCAN ACTIVE</text>
+    <text x="660" y="266">DEPTH: 14.5M</text>
+    <text x="592" y="266">NODES: 4</text>
+  </g>
+
+  <!-- ═══════════════ KEYBOARD ═══════════════ -->
+  <rect x="370" y="282" width="160" height="14" rx="3" fill="#1a1a2e"/>
+  <rect x="374" y="285" width="152" height="8" rx="2" fill="#0f0f1a"/>
+  <!-- Key rows (tiny rects) -->
+  <g fill="#2a2a4a">
+    <rect x="376" y="286" width="8" height="5" rx="1"/>
+    <rect x="386" y="286" width="8" height="5" rx="1"/>
+    <rect x="396" y="286" width="8" height="5" rx="1"/>
+    <rect x="406" y="286" width="8" height="5" rx="1"/>
+    <rect x="416" y="286" width="8" height="5" rx="1"/>
+    <rect x="426" y="286" width="8" height="5" rx="1"/>
+    <rect x="436" y="286" width="8" height="5" rx="1"/>
+    <rect x="446" y="286" width="8" height="5" rx="1"/>
+    <rect x="456" y="286" width="8" height="5" rx="1"/>
+    <rect x="466" y="286" width="8" height="5" rx="1"/>
+    <rect x="476" y="286" width="8" height="5" rx="1"/>
+    <rect x="486" y="286" width="8" height="5" rx="1"/>
+    <rect x="496" y="286" width="8" height="5" rx="1"/>
+    <rect x="506" y="286" width="8" height="5" rx="1"/>
+    <!-- Space bar -->
+    <rect x="406" y="293" width="88" height="4" rx="1"/>
+  </g>
+  <!-- Keyboard glow -->
+  <rect x="374" y="285" width="152" height="8" rx="2" fill="#C084FC" opacity="0.04">
+    <animate attributeName="opacity" values="0.02;0.07;0.02" dur="0.3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ═══════════════ COFFEE MUG ═══════════════ -->
+  <rect x="790" y="265" width="28" height="28" rx="4" fill="#2d2d3a"/>
+  <rect x="793" y="268" width="22" height="21" rx="2" fill="#1a0a3a"/>
+  <path d="M818,272 Q826,272 826,278 Q826,284 818,284" fill="none" stroke="#2d2d3a" stroke-width="3"/>
+  <!-- Coffee steam -->
+  <g fill="none" stroke="#94a3b8" stroke-width="1" stroke-linecap="round" opacity="0.5">
+    <path d="M799,263 Q801,258 799,253">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-5" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M804,265 Q806,259 804,253">
+      <animate attributeName="opacity" values="0;0.5;0" dur="2s" begin="0.4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-5" dur="2s" begin="0.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M809,263 Q811,257 809,251">
+      <animate attributeName="opacity" values="0;0.6;0" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-5" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- ═══════════════ ENGINEER CHARACTER ═══════════════ -->
+
+  <!-- CHAIR back -->
+  <rect x="390" y="235" width="120" height="90" rx="10" fill="url(#chairGrad)"/>
+  <rect x="395" y="240" width="110" height="80" rx="8" fill="#1e1e30"/>
+  <!-- Chair arms -->
+  <rect x="375" y="280" width="15" height="40" rx="5" fill="#2d2d3a"/>
+  <rect x="510" y="280" width="15" height="40" rx="5" fill="#2d2d3a"/>
+  <!-- Chair base pole -->
+  <rect x="443" y="320" width="14" height="30" rx="3" fill="#2d2d3a"/>
+  <ellipse cx="450" cy="352" rx="30" ry="6" fill="#2d2d3a"/>
+
+  <!-- TORSO / SHIRT -->
+  <rect x="405" y="248" width="90" height="75" rx="12" fill="url(#shirtGrad)"/>
+  <!-- Shirt details -->
+  <rect x="440" y="255" width="20" height="1.5" rx="1" fill="#8b5cf6" opacity="0.5"/>
+  <rect x="437" y="260" width="26" height="1.5" rx="1" fill="#8b5cf6" opacity="0.4"/>
+  <!-- Collar -->
+  <path d="M430,250 Q450,265 470,250" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <!-- Pocket detail -->
+  <rect x="412" y="265" width="18" height="14" rx="2" fill="#5b21b6" opacity="0.6"/>
+
+  <!-- LEFT ARM (typing - animated) -->
+  <g>
+    <!-- Upper arm -->
+    <rect x="397" y="262" width="14" height="38" rx="7" fill="url(#shirtGrad)"/>
+    <!-- Lower arm / forearm -->
+    <rect x="388" y="292" width="12" height="32" rx="6" fill="url(#skinGrad)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,3;0,0;0,-2;0,0" dur="0.25s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Left hand -->
+    <ellipse cx="394" cy="327" rx="8" ry="6" fill="url(#skinGrad)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,3;0,0;0,-2;0,0" dur="0.25s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- Fingers suggestion -->
+    <g fill="url(#skinGrad)">
+      <rect x="386" y="332" width="4" height="5" rx="2">
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,3;0,0;0,-2;0,0" dur="0.25s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="391" y="333" width="4" height="5" rx="2">
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,3;0,0;0,-2;0,0" dur="0.25s" begin="0.05s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="396" y="333" width="4" height="5" rx="2">
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,3;0,0;0,-2;0,0" dur="0.25s" begin="0.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- RIGHT ARM (typing - animated, offset timing) -->
+  <g>
+    <!-- Upper arm -->
+    <rect x="489" y="262" width="14" height="38" rx="7" fill="url(#shirtGrad)"/>
+    <!-- Lower arm / forearm -->
+    <rect x="500" y="292" width="12" height="32" rx="6" fill="url(#skinGrad)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0;0,3;0,0" dur="0.25s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Right hand -->
+    <ellipse cx="506" cy="327" rx="8" ry="6" fill="url(#skinGrad)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0;0,3;0,0" dur="0.25s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- Fingers suggestion -->
+    <g fill="url(#skinGrad)">
+      <rect x="500" y="332" width="4" height="5" rx="2">
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0;0,3;0,0" dur="0.25s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="505" y="333" width="4" height="5" rx="2">
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0;0,3;0,0" dur="0.25s" begin="0.05s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="510" y="333" width="4" height="5" rx="2">
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0;0,3;0,0" dur="0.25s" begin="0.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- NECK -->
+  <rect x="444" y="235" width="12" height="18" rx="5" fill="url(#skinGrad)"/>
+
+  <!-- HEAD -->
+  <ellipse cx="450" cy="220" rx="32" ry="34" fill="url(#skinGrad)" filter="url(#headShadow)"/>
+
+  <!-- HAIR -->
+  <ellipse cx="450" cy="195" rx="32" ry="14" fill="#2d1a0e"/>
+  <ellipse cx="430" cy="200" rx="12" ry="18" fill="#2d1a0e"/>
+  <ellipse cx="470" cy="200" rx="12" ry="18" fill="#2d1a0e"/>
+  <ellipse cx="450" cy="190" rx="28" ry="10" fill="#3d2510"/>
+
+  <!-- EYES -->
+  <!-- Left eye -->
+  <ellipse cx="438" cy="218" rx="7" ry="8" fill="white"/>
+  <ellipse cx="438" cy="219" rx="5" ry="6" fill="#2d1a0e"/>
+  <ellipse cx="438" cy="219" rx="3" ry="4" fill="#0d0d0d"/>
+  <ellipse cx="436" cy="217" rx="1.5" ry="1.5" fill="white"/>
+  <!-- Blinking -->
+  <ellipse cx="438" cy="218" rx="7" ry="8" fill="url(#skinGrad)" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;0;0" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="0;0;0;0;0;0;0;0;0;8;0;0" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Right eye -->
+  <ellipse cx="462" cy="218" rx="7" ry="8" fill="white"/>
+  <ellipse cx="462" cy="219" rx="5" ry="6" fill="#2d1a0e"/>
+  <ellipse cx="462" cy="219" rx="3" ry="4" fill="#0d0d0d"/>
+  <ellipse cx="460" cy="217" rx="1.5" ry="1.5" fill="white"/>
+  <!-- Blinking -->
+  <ellipse cx="462" cy="218" rx="7" ry="8" fill="url(#skinGrad)" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;0;0" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- GLASSES -->
+  <rect x="429" y="212" width="18" height="13" rx="4" fill="none" stroke="#9ca3af" stroke-width="1.5" opacity="0.8"/>
+  <rect x="453" y="212" width="18" height="13" rx="4" fill="none" stroke="#9ca3af" stroke-width="1.5" opacity="0.8"/>
+  <line x1="447" y1="217" x2="453" y2="217" stroke="#9ca3af" stroke-width="1.5" opacity="0.8"/>
+  <line x1="429" y1="217" x2="424" y2="218" stroke="#9ca3af" stroke-width="1.5" opacity="0.8"/>
+  <line x1="471" y1="217" x2="476" y2="218" stroke="#9ca3af" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- NOSE -->
+  <path d="M448,222 Q450,228 452,222" fill="none" stroke="#d4a574" stroke-width="1.2" opacity="0.7"/>
+
+  <!-- MOUTH (subtle smile) -->
+  <path d="M443,232 Q450,238 457,232" fill="none" stroke="#c4845a" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- HEADPHONES -->
+  <path d="M420,205 Q420,185 450,182 Q480,185 480,205" fill="none" stroke="#3d3d5c" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="420" cy="207" rx="7" ry="9" fill="#3d3d5c"/>
+  <ellipse cx="420" cy="207" rx="4" ry="5" fill="#C084FC" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="1.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="480" cy="207" rx="7" ry="9" fill="#3d3d5c"/>
+  <ellipse cx="480" cy="207" rx="4" ry="5" fill="#22D3EE" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="1.5s" begin="0.75s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- ═══════════════ ESP32 ON DESK ═══════════════ -->
+  <rect x="545" y="276" width="45" height="18" rx="2" fill="#1a3a1a"/>
+  <rect x="547" y="278" width="41" height="14" rx="1" fill="#0d1f0d"/>
+  <!-- ESP32 chip -->
+  <rect x="558" y="280" width="18" height="10" rx="1" fill="#2d4a2d"/>
+  <text x="561" y="287" font-family="monospace" font-size="4" fill="#22D3EE" opacity="0.8">ESP32</text>
+  <!-- LED blink -->
+  <circle cx="553" cy="285" r="2" fill="#22C55E">
+    <animate attributeName="opacity" values="1;0.1;1;0.1;1" dur="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#22C55E;#16a34a;#22C55E" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Antenna arc -->
+  <path d="M582,276 Q590,268 582,262" fill="none" stroke="#22D3EE" stroke-width="1" opacity="0.5">
+    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- ═══════════════ SCREEN AMBIENT REFLECTIONS ═══════════════ -->
+  <!-- Left screen glow on face/desk -->
+  <ellipse cx="205" cy="290" rx="100" ry="10" fill="#C084FC" opacity="0.06">
+    <animate attributeName="opacity" values="0.04;0.1;0.04" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- Right screen glow -->
+  <ellipse cx="695" cy="290" rx="100" ry="10" fill="#22D3EE" opacity="0.06">
+    <animate attributeName="opacity" values="0.04;0.1;0.04" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- ═══════════════ BOTTOM STATUS BAR ═══════════════ -->
+  <rect x="0" y="395" width="900" height="25" fill="#07090f"/>
+  <rect x="0" y="395" width="900" height="1" fill="#22D3EE" opacity="0.3"/>
+
+  <g font-family="'Courier New', monospace" font-size="8" fill="#22D3EE" opacity="0.7">
+    <text x="15" y="411">◉ COMPILING firmware.c</text>
+  </g>
+  <g font-family="'Courier New', monospace" font-size="8" fill="#C084FC" opacity="0.7">
+    <text x="220" y="411">git push origin main</text>
+  </g>
+  <g font-family="'Courier New', monospace" font-size="8" fill="#22C55E" opacity="0.8">
+    <text x="420" y="411">✓ BUILD SUCCESSFUL</text>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </g>
+  <g font-family="'Courier New', monospace" font-size="8" fill="#94a3b8" opacity="0.6">
+    <text x="640" y="411">JAFFER RILWAAN V — SIH 2026</text>
+  </g>
+
+  <!-- Loading bar at bottom -->
+  <rect x="0" y="418" width="900" height="2" fill="#1a1a2e"/>
+  <rect x="0" y="418" width="0" height="2" fill="#22D3EE" rx="1">
+    <animate attributeName="width" values="0;900;0" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>
