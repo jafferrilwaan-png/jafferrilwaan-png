@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jaffer Rilwaan V — Systems Architect & IoT Engineer</title>
+
+<!-- Three.js Import Map -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<style>
+/* ═══════════════════════════ BASE ═══════════════════════════ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --cyan:   #22D3EE;
+  --purple: #C084FC;
+  --green:  #22C55E;
+  --orange: #F97316;
+  --dark:   #030508;
+  --dark2:  #06080D;
+  --glass:  rgba(6, 8, 15, 0.72);
+  --border: rgba(34,211,238,0.18);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--dark);
+  color: #e2e8f0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+/* ═══════════════════════════ CANVAS ═══════════════════════════ */
+#bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ═══════════════════════════ PAGE WRAPPER ═══════════════════════════ */
+#page-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* ═══════════════════════════ LOADING ═══════════════════════════ */
+#loading {
+  position: fixed; inset: 0;
+  background: var(--dark);
+  z-index: 999;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 20px;
+  transition: opacity 0.8s ease;
+}
+#loading.fade { opacity: 0; pointer-events: none; }
+.loading-ring {
+  width: 56px; height: 56px;
+  border: 3px solid rgba(34,211,238,0.15);
+  border-top-color: var(--cyan);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+.loading-text {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem; letter-spacing: 4px;
+  color: var(--cyan);
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ═══════════════════════════ HERO ═══════════════════════════ */
+#hero {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: flex-start;
+  padding: 80px 5vw;
+}
+
+.hero-card {
+  background: var(--glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 52px 48px;
+  max-width: 560px;
+  width: 100%;
+  box-shadow: 0 0 80px rgba(34,211,238,0.06), 0 32px 64px rgba(0,0,0,0.5);
+  animation: cardFloat 6s ease-in-out infinite;
+}
+
+@keyframes cardFloat {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+.status-row {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 20px;
+}
+.status-dot {
+  width: 8px; height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%,100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.5); }
+  50%      { box-shadow: 0 0 0 10px rgba(34,197,94,0); }
+}
+.status-text {
+  font-family: monospace; font-size: 0.75rem;
+  color: var(--green); letter-spacing: 2px;
+}
+
+h1.name {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800; letter-spacing: -1px;
+  background: linear-gradient(135deg, var(--cyan) 30%, var(--purple));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 6px;
+}
+
+.role-text {
+  font-size: 1rem; color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.edu-text {
+  font-size: 0.85rem; color: #64748b;
+  font-family: monospace; margin-bottom: 28px;
+}
+
+/* Social buttons */
+.social-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 9px 18px; border-radius: 8px;
+  text-decoration: none; font-size: 0.82rem; font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+.btn-li  { background: #0077B5; color: #fff; }
+.btn-gh  { background: #21262d; color: #fff; border: 1px solid #30363d; }
+.btn-em  { background: #EA4335; color: #fff; }
+
+/* Badges */
+.badge-row { display: flex; flex-wrap: wrap; gap: 7px; }
+.badge {
+  padding: 4px 12px; border-radius: 20px;
+  font-size: 0.75rem; font-weight: 600; font-family: monospace;
+}
+.bc { background: rgba(34,211,238,0.12); color: var(--cyan);   border: 1px solid rgba(34,211,238,0.25); }
+.bp { background: rgba(192,132,252,0.12); color: var(--purple); border: 1px solid rgba(192,132,252,0.25); }
+.bg { background: rgba(34,197,94,0.12);  color: var(--green);  border: 1px solid rgba(34,197,94,0.25); }
+.bo { background: rgba(249,115,22,0.12); color: var(--orange); border: 1px solid rgba(249,115,22,0.25); }
+
+/* Scroll hint */
+.scroll-hint {
+  position: absolute; bottom: 28px; left: 50%;
+  transform: translateX(-50%);
+  font-family: monospace; font-size: 0.72rem;
+  color: #334155; letter-spacing: 3px;
+  animation: bob 2.2s ease-in-out infinite;
+}
+@keyframes bob {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(9px); }
+}
+
+/* ═══════════════════════════ SECTIONS ═══════════════════════════ */
+.spacer { height: 60vh; }   /* Gap for 3D room */
+
+.section-wrap {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 5vw;
+  margin-bottom: 0;
+}
+/* alternate alignment */
+.section-wrap.right { justify-content: flex-end; }
+.section-wrap.left  { justify-content: flex-start; }
+.section-wrap.center{ justify-content: center; }
+
+.card {
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 44px 40px;
+  max-width: 680px;
+  width: 100%;
+  box-shadow: 0 0 60px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card shimmer border */
+.card::before {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(34,211,238,0.08), transparent 60%, rgba(192,132,252,0.08));
+  pointer-events: none;
+}
+
+h2.section-title {
+  font-size: 1.5rem; font-weight: 700;
+  color: var(--cyan); margin-bottom: 24px;
+  display: flex; align-items: center; gap: 12px;
+}
+
+/* Divider */
+.divider {
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--cyan), var(--purple), transparent);
+  margin: 28px 0;
+  animation: div-pulse 3s ease-in-out infinite;
+}
+@keyframes div-pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
+
+/* ═══════════════════════════ MANIFEST ═══════════════════════════ */
+.manifest {
+  background: rgba(0,0,0,0.55);
+  border: 1px solid rgba(34,211,238,0.18);
+  border-radius: 10px;
+  padding: 24px 28px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.82rem;
+  line-height: 2;
+  overflow-x: auto;
+}
+
+/* ═══════════════════════════ PROJECTS GRID ═══════════════════════════ */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media(max-width:580px){ .projects-grid { grid-template-columns: 1fr; } }
+
+.pcard {
+  background: rgba(10,14,28,0.9);
+  border: 1px solid rgba(34,211,238,0.15);
+  border-radius: 12px;
+  padding: 20px;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.pcard:hover {
+  border-color: var(--cyan);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(34,211,238,0.12);
+}
+.pcard h3 {
+  font-size: 0.95rem; color: var(--purple);
+  margin-bottom: 6px;
+}
+.ptag {
+  font-size: 0.72rem; color: var(--cyan);
+  font-family: monospace; margin-bottom: 10px;
+  display: block;
+}
+.pcard p {
+  font-size: 0.82rem; color: #94a3b8;
+  margin-bottom: 12px; line-height: 1.6;
+}
+.plink {
+  color: var(--cyan); text-decoration: none;
+  font-size: 0.8rem; font-weight: 600;
+}
+.plink:hover { text-decoration: underline; }
+
+/* ═══════════════════════════ SKILL BARS ═══════════════════════════ */
+.skill-row { margin-bottom: 14px; }
+.skill-label-row {
+  display: flex; justify-content: space-between;
+  font-family: monospace; font-size: 0.78rem;
+  margin-bottom: 5px;
+}
+.skill-bar-bg {
+  height: 6px; border-radius: 3px;
+  background: rgba(255,255,255,0.07);
+  overflow: hidden;
+}
+.skill-bar-fill {
+  height: 100%; border-radius: 3px;
+  animation: bar-grow 1.5s ease forwards;
+  transform-origin: left;
+}
+@keyframes bar-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* ═══════════════════════════ STATS ═══════════════════════════ */
+.stats-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px; margin-top: 28px;
+}
+.stat-box {
+  text-align: center; padding: 18px 10px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.stat-num {
+  font-size: 1.8rem; font-weight: 800;
+  font-family: monospace; display: block;
+}
+.stat-lbl {
+  font-size: 0.68rem; font-family: monospace;
+  color: #64748b; margin-top: 4px; letter-spacing: 1px;
+  display: block;
+}
+
+/* ═══════════════════════════ FOOTER ═══════════════════════════ */
+#footer {
+  padding: 80px 5vw 60px;
+  display: flex; justify-content: center;
+}
+.footer-card {
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 44px;
+  max-width: 680px; width: 100%;
+  text-align: center;
+}
+
+/* ═══════════════════════════ CORNER HINT ═══════════════════════════ */
+#hint {
+  position: fixed; bottom: 18px; right: 20px;
+  font-family: monospace; font-size: 0.68rem;
+  color: rgba(34,211,238,0.35); z-index: 5;
+  pointer-events: none; letter-spacing: 2px;
+}
+
+/* ═══════════════════════════ RESPONSIVE ═══════════════════════════ */
+@media(max-width:768px){
+  .hero-card { padding: 36px 28px; }
+  .card { padding: 32px 24px; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  h1.name { font-size: 1.8rem; }
+}
+@media(max-width:480px){
+  .stats-grid { grid-template-columns: 1fr; }
+  .section-wrap { padding: 0 4vw; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ LOADING ═══════════════════ -->
+<div id="loading">
+  <div class="loading-ring"></div>
+  <div class="loading-text">◉ INITIALIZING AURA SYSTEMS</div>
+</div>
+
+<!-- ═══════════════════ 3D CANVAS ═══════════════════ -->
+<canvas id="bg"></canvas>
+
+<!-- Corner label -->
+<div id="hint">◉ SCROLL TO INTERACT</div>
+
+<!-- ═══════════════════ PAGE CONTENT ═══════════════════ -->
+<div id="page-content">
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero" style="position:relative;">
+    <div class="hero-card">
+      <div class="status-row">
+        <span class="status-dot"></span>
+        <span class="status-text">SYSTEMS ONLINE</span>
+      </div>
+
+      <h1 class="name">Jaffer Rilwaan V</h1>
+      <p class="role-text">🛰️ Lead Systems Architect · Full-Stack & IoT Engineer</p>
+      <p class="role-text" style="margin-bottom:4px;">3D WebGL HUDs · Embedded Firmware · Sensor Telemetry</p>
+      <p class="edu-text">🎓 Electronics & Communication Engineering — Panimalar Engineering College</p>
+
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386" class="btn btn-li" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/jafferrilwaan-png" class="btn btn-gh" target="_blank">🐙 GitHub</a>
+        <a href="mailto:tactical@aurasystem.dev" class="btn btn-em" target="_blank">✉️ Email</a>
+      </div>
+
+      <div class="badge-row">
+        <span class="badge bc">TypeScript</span>
+        <span class="badge bc">Three.js</span>
+        <span class="badge bp">React 18</span>
+        <span class="badge bp">Node.js</span>
+        <span class="badge bg">ESP32</span>
+        <span class="badge bg">LoRa SX1262</span>
+        <span class="badge bo">C++ Firmware</span>
+      </div>
+    </div>
+    <div class="scroll-hint">▼ SCROLL TO EXPLORE ▼</div>
+  </section>
+
+  <!-- ═══ SPACER ═══ -->
+  <div class="spacer"></div>
+
+  <!-- ═══ CHARACTERS SECTION ═══ -->
+  <section id="section-characters">
+    <div class="section-wrap right">
+      <div class="card">
+        <h2 class="section-title">🧑‍💻 The Engineer Behind The Code</h2>
+        <p style="color:#94a3b8; margin-bottom:20px;">
+          Designing systems at the intersection of <strong style="color:var(--cyan);">embedded hardware</strong>,
+          <strong style="color:var(--purple);">3D visualization</strong>, and
+          <strong style="color:var(--green);">modern web architecture</strong>. From piezoelectric geophone DSP
+          to real-time 3D WebGL HUDs — engineered end-to-end.
+        </p>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+          <div style="background:rgba(34,211,238,0.05);border:1px solid rgba(34,211,238,0.15);border-radius:10px;padding:18px;">
+            <h3 style="color:var(--cyan);font-size:0.95rem;margin-bottom:7px;">⚡ Systems Architect</h3>
+            <p style="font-size:0.8rem;color:#94a3b8;">Full-Stack & IoT Engineering — hardware-software pipelines from sensor layer to 3D visualization.</p>
+          </div>
+          <div style="background:rgba(192,132,252,0.05);border:1px solid rgba(192,132,252,0.15);border-radius:10px;padding:18px;">
+            <h3 style="color:var(--purple);font-size:0.95rem;margin-bottom:7px;">🛰️ Embedded Hardware</h3>
+            <p style="font-size:0.8rem;color:#94a3b8;">ESP32 · SM-24 Geophones · SX1262 LoRa Mesh · NEO-6M GPS · 40 kHz Ultrasonic ToF</p>
+          </div>
+          <div style="background:rgba(34,211,238,0.05);border:1px solid rgba(34,211,238,0.15);border-radius:10px;padding:18px;">
+            <h3 style="color:var(--cyan);font-size:0.95rem;margin-bottom:7px;">🌐 Frontend Engineer</h3>
+            <p style="font-size:0.8rem;color:#94a3b8;">React 18 · TypeScript · Three.js 3D WebGL · Tailwind CSS · Vite · GSAP</p>
+          </div>
+          <div style="background:rgba(192,132,252,0.05);border:1px solid rgba(192,132,252,0.15);border-radius:10px;padding:18px;">
+            <h3 style="color:var(--purple);font-size:0.95rem;margin-bottom:7px;">🏗️ Backend Architect</h3>
+            <p style="font-size:0.8rem;color:#94a3b8;">Node.js · Express REST APIs · MongoDB · MySQL · Python · Real-time telemetry</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer"></div>
+
+  <!-- ═══ MANIFEST SECTION ═══ -->
+  <section id="section-manifest">
+    <div class="section-wrap left">
+      <div class="card">
+        <h2 class="section-title">📡 Systems Engineering Manifest</h2>
+        <div class="manifest">
+          <span style="color:#334155;">╔══════════════════════════════════════════════════════════╗</span><br>
+          <span style="color:#475569;">║ </span><span style="color:#64748b;">ROLE    </span><span style="color:#94a3b8;">: </span><span style="color:var(--cyan);">Lead Systems Architect & Full-Stack IoT Engineer</span><span style="color:#334155;"> ║</span><br>
+          <span style="color:#475569;">║ </span><span style="color:#64748b;">HW      </span><span style="color:#94a3b8;">: </span><span style="color:var(--green);">ESP32 · SX1262 LoRa Mesh · SM-24 Geophones   </span><span style="color:#334155;"> ║</span><br>
+          <span style="color:#475569;">║ </span><span style="color:#64748b;">FIRMWARE</span><span style="color:#94a3b8;">: </span><span style="color:var(--orange);">C/C++ Real-Time Sensor DSP & Satellite Telemetry</span><span style="color:#334155;"> ║</span><br>
+          <span style="color:#475569;">║ </span><span style="color:#64748b;">FRONTEND</span><span style="color:#94a3b8;">: </span><span style="color:var(--purple);">React 18 · TypeScript · Three.js WebGL HUDs   </span><span style="color:#334155;"> ║</span><br>
+          <span style="color:#475569;">║ </span><span style="color:#64748b;">BACKEND </span><span style="color:#94a3b8;">: </span><span style="color:var(--cyan);">Node.js · Express APIs · MongoDB · Python      </span><span style="color:#334155;"> ║</span><br>
+          <span style="color:#475569;">║ </span><span style="color:#64748b;">MISSION </span><span style="color:#94a3b8;">: </span><span style="color:#fbbf24;">Disaster rescue · Healthcare AI · Accessibility </span><span style="color:#334155;"> ║</span><br>
+          <span style="color:#475569;">║ </span><span style="color:#64748b;">STATUS  </span><span style="color:#94a3b8;">: </span><span style="color:var(--green);">⚡ Active — Compiling & Scaling Production     </span><span style="color:#334155;"> ║</span><br>
+          <span style="color:#334155;">╚══════════════════════════════════════════════════════════╝</span>
+        </div>
+
+        <div id="writing-console" style="margin-top:20px;background:rgba(0,0,0,0.4);border:1px solid rgba(34,211,238,0.1);border-radius:8px;padding:14px 18px;font-family:monospace;font-size:0.78rem;color:var(--cyan);min-height:52px;display:none;">
+          <span id="console-text"></span><span style="animation:blink 0.7s step-end infinite;color:var(--cyan);">█</span>
+        </div>
+        <style>@keyframes blink{50%{opacity:0;}}</style>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer"></div>
+
+  <!-- ═══ PROJECTS SECTION ═══ -->
+  <section id="section-projects">
+    <div class="section-wrap center">
+      <div class="card" style="max-width:860px;">
+        <h2 class="section-title">🚀 Project Arsenal — 7 Live Deployments</h2>
+        <div class="projects-grid">
+
+          <div class="pcard">
+            <h3>🛰️ A.U.R.A.</h3>
+            <span class="ptag">Autonomous Underground Rescue Array · SIH 2026</span>
+            <p>Sub-surface cavity & survivor detection. 40 kHz ultrasonic ToF, SM-24 geophone DSP, NEO-6M GPS, 3D WebGL tactical HUD.</p>
+            <div class="badge-row" style="margin-bottom:12px;">
+              <span class="badge bc" style="font-size:0.7rem;">TypeScript</span>
+              <span class="badge bc" style="font-size:0.7rem;">Three.js</span>
+              <span class="badge bg" style="font-size:0.7rem;">ESP32</span>
+            </div>
+            <a class="plink" href="https://github.com/jafferrilwaan-png/A.U.R.A-System" target="_blank">🔗 View Project →</a>
+          </div>
+
+          <div class="pcard">
+            <h3>🏥 AXON</h3>
+            <span class="ptag">Healthcare Digital Platform</span>
+            <p>Centralized EHR & real-time patient telemetry analytics with efficient hospital workflow orchestration.</p>
+            <div class="badge-row" style="margin-bottom:12px;">
+              <span class="badge bc" style="font-size:0.7rem;">TypeScript</span>
+              <span class="badge bp" style="font-size:0.7rem;">React</span>
+              <span class="badge bg" style="font-size:0.7rem;">MongoDB</span>
+            </div>
+            <a class="plink" href="https://github.com/jafferrilwaan-png/AXON" target="_blank">🔗 View Project →</a>
+          </div>
+
+          <div class="pcard">
+            <h3>🔥 Agni Paravai</h3>
+            <span class="ptag">Full-Stack Web Platform</span>
+            <p>High-performance reactive web platform with modular component architecture and glassmorphic dark UI.</p>
+            <div class="badge-row" style="margin-bottom:12px;">
+              <span class="badge bc" style="font-size:0.7rem;">TypeScript</span>
+              <span class="badge bp" style="font-size:0.7rem;">Vite</span>
+              <span class="badge bc" style="font-size:0.7rem;">Tailwind</span>
+            </div>
+            <a class="plink" href="https://github.com/jafferrilwaan-png/agni-paravai" target="_blank">🔗 View Project →</a>
+          </div>
+
+          <div class="pcard">
+            <h3>🔊 Silent Voice</h3>
+            <span class="ptag">Accessibility System</span>
+            <p>Assistive communication portal for speech-impaired individuals via real-time voice synthesis.</p>
+            <div class="badge-row" style="margin-bottom:12px;">
+              <span class="badge bo" style="font-size:0.7rem;">JavaScript</span>
+              <span class="badge bc" style="font-size:0.7rem;">Web Speech API</span>
+            </div>
+            <a class="plink" href="https://github.com/jafferrilwaan-png/silent-voice" target="_blank">🔗 View Project →</a>
+          </div>
+
+          <div class="pcard">
+            <h3>📊 CGPA Calculator</h3>
+            <span class="ptag">Academic Analytics</span>
+            <p>Precision grade tracking with weighted GPA computation, target-grade forecasting and interactive charts.</p>
+            <div class="badge-row" style="margin-bottom:12px;">
+              <span class="badge bp" style="font-size:0.7rem;">React</span>
+              <span class="badge bp" style="font-size:0.7rem;">Vite</span>
+              <span class="badge bc" style="font-size:0.7rem;">Tailwind</span>
+            </div>
+            <a class="plink" href="https://github.com/jafferrilwaan-png/cgpa-calculator" target="_blank">🔗 View Project →</a>
+          </div>
+
+          <div class="pcard">
+            <h3>🔗 Agni Paravai Extended</h3>
+            <span class="ptag">Extended Architecture Build</span>
+            <p>Enhanced build with optimized data pipeline layers and improved performance architecture.</p>
+            <div class="badge-row" style="margin-bottom:12px;">
+              <span class="badge bc" style="font-size:0.7rem;">TypeScript</span>
+              <span class="badge bp" style="font-size:0.7rem;">React</span>
+            </div>
+            <a class="plink" href="https://github.com/jafferrilwaan-png/agni-paravais" target="_blank">🔗 View Project →</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer"></div>
+
+  <!-- ═══ TECH STACK SECTION ═══ -->
+  <section id="section-tech">
+    <div class="section-wrap right">
+      <div class="card">
+        <h2 class="section-title">🛠️ Hardware & Software Arsenal</h2>
+
+        <!-- Skill bars -->
+        <div style="margin-bottom:8px;font-family:monospace;font-size:0.72rem;color:#475569;letter-spacing:2px;text-transform:uppercase;">🌐 Frontend & 3D</div>
+        <div class="skill-row">
+          <div class="skill-label-row"><span style="color:var(--cyan);">TypeScript / React</span><span style="color:#64748b;">84%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:84%;background:linear-gradient(90deg,var(--cyan),var(--purple));"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label-row"><span style="color:var(--cyan);">Three.js / WebGL</span><span style="color:#64748b;">78%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:78%;background:linear-gradient(90deg,var(--cyan),#0ea5e9);"></div></div>
+        </div>
+        <div class="skill-row" style="margin-bottom:20px;">
+          <div class="skill-label-row"><span style="color:var(--cyan);">JavaScript</span><span style="color:#64748b;">90%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:90%;background:linear-gradient(90deg,#fbbf24,var(--orange));"></div></div>
+        </div>
+
+        <div style="margin-bottom:8px;font-family:monospace;font-size:0.72rem;color:#475569;letter-spacing:2px;text-transform:uppercase;">⚙️ Backend & Systems</div>
+        <div class="skill-row">
+          <div class="skill-label-row"><span style="color:var(--purple);">Node.js / Express</span><span style="color:#64748b;">80%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:80%;background:linear-gradient(90deg,var(--green),#16a34a);"></div></div>
+        </div>
+        <div class="skill-row" style="margin-bottom:20px;">
+          <div class="skill-label-row"><span style="color:var(--purple);">MongoDB / MySQL</span><span style="color:#64748b;">72%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:72%;background:linear-gradient(90deg,var(--green),#15803d);"></div></div>
+        </div>
+
+        <div style="margin-bottom:8px;font-family:monospace;font-size:0.72rem;color:#475569;letter-spacing:2px;text-transform:uppercase;">📡 Embedded & IoT</div>
+        <div class="skill-row">
+          <div class="skill-label-row"><span style="color:var(--green);">ESP32 / C++ Firmware</span><span style="color:#64748b;">75%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:75%;background:linear-gradient(90deg,var(--orange),#dc2626);"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label-row"><span style="color:var(--green);">LoRa / GPS / Sensors</span><span style="color:#64748b;">70%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:70%;background:linear-gradient(90deg,var(--orange),#b45309);"></div></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="stats-grid">
+          <div class="stat-box" style="background:rgba(34,211,238,0.05);border-color:rgba(34,211,238,0.2);">
+            <span class="stat-num" style="color:var(--cyan);">4,609</span>
+            <span class="stat-lbl">CONTRIBUTIONS</span>
+          </div>
+          <div class="stat-box" style="background:rgba(192,132,252,0.05);border-color:rgba(192,132,252,0.2);">
+            <span class="stat-num" style="color:var(--purple);">7</span>
+            <span class="stat-lbl">LIVE PROJECTS</span>
+          </div>
+          <div class="stat-box" style="background:rgba(34,197,94,0.05);border-color:rgba(34,197,94,0.2);">
+            <span class="stat-num" style="color:var(--green);">14🔥</span>
+            <span class="stat-lbl">BEST STREAK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer" style="height:30vh;"></div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer id="footer">
+    <div class="footer-card">
+      <p style="font-family:monospace;font-size:0.72rem;color:#334155;letter-spacing:3px;margin-bottom:10px;">◉ SYSTEMS ENGINEERED BY</p>
+      <h2 style="font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px;">JAFFER RILWAAN V</h2>
+      <p style="color:#64748b;font-size:0.85rem;margin-bottom:4px;">Lead Systems Architect · Full-Stack & IoT Engineer</p>
+      <div class="divider" style="max-width:400px;margin:20px auto;"></div>
+      <p style="font-family:monospace;font-size:0.72rem;color:#334155;letter-spacing:2px;">SIH 2026 · Panimalar Engineering College · ECE</p>
+    </div>
+  </footer>
+
+</div><!-- end #page-content -->
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     THREE.JS + GSAP SCENE
+═══════════════════════════════════════════════════════════ -->
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader }   from 'three/addons/loaders/GLTFLoader.js';
+import { DRACOLoader }  from 'three/addons/loaders/DRACOLoader.js';
+
+// ─── RENDERER ───────────────────────────────────────────────
+const canvas   = document.getElementById('bg');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.shadowMap.enabled = true;
+
+// ─── SCENE / CAMERA ────────────────────────────────────────
+const scene  = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 80);
+camera.position.set(0, 0.3, 6);
+
+// ─── LIGHTING ──────────────────────────────────────────────
+scene.add(new THREE.AmbientLight(0x0a0520, 1.2));
+
+const cyanLight = new THREE.PointLight(0x22D3EE, 10, 14);
+cyanLight.position.set(3, 3, 3);
+scene.add(cyanLight);
+
+const purpleLight = new THREE.PointLight(0xC084FC, 8, 14);
+purpleLight.position.set(-3, 2, 2);
+scene.add(purpleLight);
+
+const keyLight = new THREE.DirectionalLight(0xffffff, 1.8);
+keyLight.position.set(2, 6, 4);
+keyLight.castShadow = true;
+scene.add(keyLight);
+
+const fillLight = new THREE.DirectionalLight(0x22D3EE, 0.5);
+fillLight.position.set(-4, 0, 2);
+scene.add(fillLight);
+
+// Manifest spotlight
+const mSpot = new THREE.SpotLight(0x22D3EE, 0, 20, Math.PI / 7, 0.4);
+mSpot.position.set(-1, 5, 3);
+scene.add(mSpot);
+
+// ─── PARTICLES ─────────────────────────────────────────────
+const POS = [], COL = [];
+for (let i = 0; i < 250; i++) {
+  POS.push((Math.random()-.5)*28, (Math.random()-.5)*18, (Math.random()-.5)*14-6);
+  if (Math.random()>.5) COL.push(0.13,0.83,0.93); else COL.push(0.75,0.52,0.99);
+}
+const pGeo = new THREE.BufferGeometry();
+pGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(POS), 3));
+pGeo.setAttribute('color',    new THREE.BufferAttribute(new Float32Array(COL), 3));
+const pMat = new THREE.PointsMaterial({ size: 0.045, vertexColors: true, transparent: true, opacity: 0.55 });
+const stars = new THREE.Points(pGeo, pMat);
+scene.add(stars);
+
+// ─── GRID FLOOR ────────────────────────────────────────────
+const grid = new THREE.GridHelper(32, 32, 0x22D3EE, 0x0a1a2e);
+grid.position.y = -2.8;
+grid.material.opacity = 0.12;
+grid.material.transparent = true;
+scene.add(grid);
+
+// ─── WRITING PARTICLES ─────────────────────────────────────
+const writeGroup = new THREE.Group();
+writeGroup.visible = false;
+scene.add(writeGroup);
+const wParts = [];
+
+function spawnWriteParticle() {
+  const m = new THREE.Mesh(
+    new THREE.SphereGeometry(0.025, 5, 5),
+    new THREE.MeshStandardMaterial({ color:0x22D3EE, emissive:0x22D3EE, emissiveIntensity:4, transparent:true })
+  );
+  m.position.set((Math.random()-.5)*2.5, (Math.random()-.5)*0.6, 0.4);
+  writeGroup.add(m);
+  wParts.push({ mesh:m, life:1 });
+}
+
+// ─── FALLBACK ROBOT ────────────────────────────────────────
+function makeFallbackBot(c1=0x22D3EE, c2=0xC084FC) {
+  const g = new THREE.Group();
+  const m1 = new THREE.MeshStandardMaterial({color:c1,metalness:.8,roughness:.2,emissive:c1,emissiveIntensity:.4});
+  const m2 = new THREE.MeshStandardMaterial({color:c2,metalness:.8,roughness:.2,emissive:c2,emissiveIntensity:.3});
+  const addBox = (w,h,d,mat,x,y,z) => {
+    const mesh = new THREE.Mesh(new THREE.BoxGeometry(w,h,d), mat);
+    mesh.position.set(x,y,z); g.add(mesh);
+    return mesh;
+  };
+  addBox(.65,.85,.42,m1, 0,0,0);
+  addBox(.52,.42,.38,m1, 0,.66,0);  // head
+  const el = new THREE.Mesh(new THREE.SphereGeometry(.07,8,8),
+    new THREE.MeshStandardMaterial({color:0x22D3EE,emissive:0x22D3EE,emissiveIntensity:3}));
+  el.position.set(-.13,.67,.2); g.add(el);
+  const er = el.clone(); er.position.set(.13,.67,.2); g.add(er);
+  addBox(.16,.55,.16,m2, -.44,.1,0);
+  addBox(.16,.55,.16,m2,  .44,.1,0);
+  addBox(.22,.52,.22,m2, -.19,-.65,0);
+  addBox(.22,.52,.22,m2,  .19,-.65,0);
+  const ant = new THREE.Mesh(new THREE.CylinderGeometry(.02,.02,.28,8),m1);
+  ant.position.set(0,.95,0); g.add(ant);
+  const tip = new THREE.Mesh(new THREE.SphereGeometry(.045,8,8),
+    new THREE.MeshStandardMaterial({color:0xC084FC,emissive:0xC084FC,emissiveIntensity:3}));
+  tip.position.set(0,1.1,0); g.add(tip);
+  return g;
+}
+
+// ─── LOAD MODELS ───────────────────────────────────────────
+const ROBOT_URL = 'https://threejs.org/examples/models/gltf/RobotExpressive/RobotExpressive.glb';
+const loader = new GLTFLoader();
+
+let hero = null, heroMixer = null, heroActions = {}, heroCurrent = null;
+let writer = null, writerMixer = null, writerActions = {};
+
+function playHero(name, loop=true, blendIn=0.4) {
+  if (!heroMixer || !heroActions[name]) return;
+  if (heroCurrent) heroCurrent.fadeOut(0.35);
+  const a = heroActions[name];
+  a.reset().fadeIn(blendIn).play();
+  a.setLoop(loop ? THREE.LoopRepeat : THREE.LoopOnce, Infinity);
+  if (!loop) a.clampWhenFinished = true;
+  heroCurrent = a;
+}
+
+// Load hero robot
+loader.load(ROBOT_URL, gltf => {
+  hero = gltf.scene;
+  hero.scale.set(.9,.9,.9);
+  hero.position.set(2.4,-1.3,0);
+  hero.rotation.y = -0.45;
+  hero.traverse(c => { if(c.isMesh){ c.castShadow=true; } });
+  scene.add(hero);
+
+  heroMixer = new THREE.AnimationMixer(hero);
+  gltf.animations.forEach(clip => { heroActions[clip.name] = heroMixer.clipAction(clip); });
+  playHero('Wave');
+  setTimeout(() => playHero('Idle'), 2800);
+
+}, undefined, () => {
+  hero = makeFallbackBot(0x22D3EE, 0xC084FC);
+  hero.position.set(2.4,-1.3,0);
+  scene.add(hero);
+});
+
+// Load writer robot
+loader.load(ROBOT_URL, gltf => {
+  writer = gltf.scene;
+  writer.scale.set(.55,.55,.55);
+  writer.position.set(-2.6,-1.6,-1);
+  writer.rotation.y = .7;
+  writer.visible = false;
+  writer.traverse(c => { if(c.isMesh){ c.castShadow=true; } });
+  scene.add(writer);
+
+  writerMixer = new THREE.AnimationMixer(writer);
+  gltf.animations.forEach(clip => { writerActions[clip.name] = writerMixer.clipAction(clip); });
+}, undefined, () => {
+  writer = makeFallbackBot(0xC084FC, 0x22D3EE);
+  writer.scale.set(.55,.55,.55);
+  writer.position.set(-2.6,-1.6,-1);
+  writer.visible = false;
+  scene.add(writer);
+});
+
+// ─── MOUSE PARALLAX ────────────────────────────────────────
+const mouse = {x:0, y:0};
+const mTarget = {x:0, y:0};
+window.addEventListener('mousemove', e => {
+  mTarget.x = (e.clientX/window.innerWidth  - .5) * 2;
+  mTarget.y = -(e.clientY/window.innerHeight - .5) * 2;
+});
+
+// ─── GSAP SCROLL TRIGGERS ──────────────────────────────────
+gsap.registerPlugin(ScrollTrigger);
+
+const state = { prog: 0 };
+ScrollTrigger.create({
+  trigger: '#page-content',
+  start: 'top top', end: 'bottom bottom',
+  scrub: true,
+  onUpdate(s){ state.prog = s.progress; }
+});
+
+// Section triggers
+ScrollTrigger.create({
+  trigger: '#section-characters', start: 'top 55%',
+  onEnter() {
+    playHero('ThumbsUp', false);
+    setTimeout(() => playHero('Idle'), 2200);
+  }
+});
+
+ScrollTrigger.create({
+  trigger: '#section-manifest', start: 'top 55%',
+  onEnter() {
+    playHero('Yes');
+    mSpot.intensity = 18;
+    gsap.to(cyanLight, {intensity:22, duration:.3, yoyo:true, repeat:6});
+    if (writer){ writer.visible=true; writeGroup.visible=true; }
+    if (writerMixer && writerActions['Walking']) {
+      writerActions['Walking'].play();
+    }
+    // Start writing console animation
+    const el = document.getElementById('writing-console');
+    const txt = document.getElementById('console-text');
+    if(el){ el.style.display='block'; }
+    const lines = [
+      '> scanning sub-surface cavity...',
+      '> ultrasonic pulse @ 40kHz sent',
+      '> geophone reading: 6.7 SR detected',
+      '> GPS lock: LAT 34.0522° N',
+      '> LoRa mesh packet transmitted ✓',
+    ];
+    let li=0, ci=0;
+    const typeInterval = setInterval(() => {
+      if(!txt) return;
+      if(ci < lines[li].length) { txt.textContent += lines[li][ci++]; }
+      else { ci=0; li++; txt.textContent+='\n'; if(li>=lines.length){ clearInterval(typeInterval); } }
+    }, 40);
+  },
+  onLeaveBack() {
+    mSpot.intensity = 0;
+    if(writer){ writer.visible=false; writeGroup.visible=false; }
+    const el = document.getElementById('writing-console');
+    if(el) el.style.display='none';
+  }
+});
+
+ScrollTrigger.create({
+  trigger: '#section-projects', start: 'top 55%',
+  onEnter() {
+    playHero('Jump', false);
+    setTimeout(() => playHero('Idle'), 2000);
+  }
+});
+
+ScrollTrigger.create({
+  trigger: '#section-tech', start: 'top 55%',
+  onEnter() { playHero('Dance', false); setTimeout(() => playHero('Idle'), 3000); }
+});
+
+ScrollTrigger.create({
+  trigger: '#footer', start: 'top 65%',
+  onEnter() {
+    // 360 spin
+    if(hero) gsap.to(hero.rotation, {y: hero.rotation.y + Math.PI*2, duration:1.6, ease:'power2.inOut'});
+    playHero('ThumbsUp', false);
+  }
+});
+
+// ─── CLOCK & RENDER LOOP ───────────────────────────────────
+const clock = new THREE.Clock();
+
+(function animate(){
+  requestAnimationFrame(animate);
+  const dt = clock.getDelta();
+  const et = clock.getElapsedTime();
+
+  // Mixers
+  if(heroMixer)   heroMixer.update(dt);
+  if(writerMixer) writerMixer.update(dt);
+
+  // Smooth mouse
+  mouse.x += (mTarget.x - mouse.x) * .055;
+  mouse.y += (mTarget.y - mouse.y) * .055;
+
+  // Hero scroll positioning
+  if(hero) {
+    const p = state.prog;
+    let tx, ty, try_ = -0.45 + mouse.x*.18;
+
+    if      (p < .20) { tx=2.4;  ty=-1.3+Math.sin(et*.9)*.1; }    // hero - right
+    else if (p < .40) { tx=2.0;  ty=-1.1; try_=-0.7+mouse.x*.12; } // characters - center-right
+    else if (p < .58) { tx=1.6;  ty=-1.0; try_=-1.1; }              // manifest - scan left
+    else if (p < .76) { tx=-2.1; ty=-1.0+Math.sin(et*1.3)*.18; try_=.45; } // projects - left float
+    else              { tx=-2.2; ty=-1.1; try_=.6; }                // footer - guard
+
+    hero.position.x += (tx - hero.position.x) * .028;
+    hero.position.y += (ty - hero.position.y) * .028;
+    hero.rotation.y += (try_ - hero.rotation.y) * .045;
+    hero.rotation.x  = mouse.y * .07;
+
+    // Cyan light follows hero
+    cyanLight.position.x = hero.position.x + .5;
+    cyanLight.position.y = hero.position.y + 2.5;
+  }
+
+  // Writer robot oscillate
+  if(writer && writer.visible) {
+    writer.position.x = -2.6 + Math.sin(et*.55)*.35;
+    writer.rotation.y = .7 + Math.sin(et*.3)*.25;
+  }
+
+  // Writing particles
+  if(writeGroup.visible) {
+    if(Math.random()<.25) spawnWriteParticle();
+    for(let i=wParts.length-1; i>=0; i--) {
+      const wp = wParts[i];
+      wp.life -= dt*.7;
+      wp.mesh.material.opacity = wp.life;
+      wp.mesh.position.x += dt*.6;
+      if(wp.life<=0){ writeGroup.remove(wp.mesh); wParts.splice(i,1); }
+    }
+  }
+
+  // Pulse lights
+  cyanLight.intensity   = 8  + Math.sin(et*2.1)*2.5;
+  purpleLight.intensity = 7  + Math.cos(et*1.7)*2;
+
+  // Rotate stars
+  stars.rotation.y = et * .018;
+  stars.rotation.x = et * .008;
+
+  renderer.render(scene, camera);
+})();
+
+// ─── RESIZE ────────────────────────────────────────────────
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+});
+
+// ─── HIDE LOADER ───────────────────────────────────────────
+setTimeout(() => {
+  const l = document.getElementById('loading');
+  l.classList.add('fade');
+  setTimeout(() => l.remove(), 900);
+}, 1800);
+</script>
+
+</body>
+</html>
