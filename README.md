@@ -1,5 +1,11 @@
 <div align="center">
 
+<!-- Small logo GIF at top -->
+<img src="./github_animation.gif" width="120" height="120" style="border-radius:50%" alt="Jaffer Rilwaan Logo Animation" />
+
+<br/>
+
+<!-- Animated typing text -->
 <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=28&duration=2000&pause=800&color=C084FC&center=true&vCenter=true&repeat=true&width=800&height=70&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Disaster+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Accessibility+Systems;7+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
 
 <p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
@@ -56,12 +62,6 @@
   </tr>
 </table>
 
-<br/>
-
-<!-- ══════════ GITHUB ANIMATION GIF ══════════ -->
-<div align="center">
-  <img src="./github_animation.gif" width="300" alt="Developer Animation" />
-</div>
 
 <img src="./pulse_divider.svg" width="100%" />
 
