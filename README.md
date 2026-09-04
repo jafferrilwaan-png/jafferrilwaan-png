@@ -60,7 +60,7 @@
 
 <!-- ══════════ GITHUB ANIMATION GIF ══════════ -->
 <div align="center">
-  <img src="./github_animation.gif" width="96%" alt="Developer Animation" />
+  <img src="./github_animation.gif" width="300" alt="Developer Animation" />
 </div>
 
 <img src="./pulse_divider.svg" width="100%" />
