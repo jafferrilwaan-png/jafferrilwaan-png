@@ -1,31 +1,35 @@
 <div align="center">
 
-<!-- ══════════ ANIMATED TYPING HEADER ══════════ -->
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=28&duration=2000&pause=800&color=C084FC&center=true&vCenter=true&repeat=true&width=800&height=70&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Disaster+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Accessibility+Systems;7+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
-
-<p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>&nbsp;
-  <a href="mailto:tactical@aurasystem.dev">
-    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>&nbsp;
-  <a href="https://github.com/jafferrilwaan-png?tab=repositories">
-    <img src="https://img.shields.io/badge/GitHub-7%20Projects-9333EA?style=for-the-badge&logo=github&logoColor=white" />
-  </a>&nbsp;
-  <img src="https://img.shields.io/badge/Status-⚡ Active Engineering-22C55E?style=for-the-badge" />
-</p>
-
-<p align="center">
-  <a href="./bumblebee_robot_transformers_human_alliance/scene.gltf">
-    <img src="https://img.shields.io/badge/🤖%203D%20Model-Bumblebee%20Alliance%20(GLTF%20%2B%20PBR)-F59E0B?style=for-the-badge&logo=blender&logoColor=white" />
-  </a>&nbsp;
-  <a href="./bumblebee_robot_transformers_human_alliance">
-    <img src="https://img.shields.io/badge/📦%20Repository%20Files-Browse%203D%20Package-22D3EE?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
+<!-- ══════════ TOP LANDING: BUMBLEBEE (LEFT) + JAFFER RILWAAN (RIGHT) ══════════ -->
+<table>
+  <tr>
+    <td width="30%" align="center" valign="middle">
+      <a href="./bumblebee_robot_transformers_human_alliance/scene.gltf">
+        <img src="https://img.shields.io/badge/🤖%203D%20MODEL-BUMBLEBEE-F59E0B?style=for-the-badge&logo=blender&logoColor=white" alt="Bumblebee 3D Model" />
+        <br/><br/>
+        <img src="https://img.shields.io/badge/📦%20BROWSE%203D-scene.gltf-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Browse 3D Files" />
+        <br/><br/>
+        <sub><b>⚡ Touch to view 3D Model</b></sub>
+      </a>
+    </td>
+    <td width="70%" align="left" valign="middle">
+      <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=24&duration=2000&pause=800&color=C084FC&center=false&vCenter=true&repeat=true&width=560&height=60&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Disaster+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Accessibility+Systems;7+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
+      <p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
+      <p>
+        <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386">
+          <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+        </a>&nbsp;
+        <a href="mailto:tactical@aurasystem.dev">
+          <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+        </a>&nbsp;
+        <a href="https://github.com/jafferrilwaan-png?tab=repositories">
+          <img src="https://img.shields.io/badge/GitHub-7%20Projects-9333EA?style=for-the-badge&logo=github&logoColor=white" />
+        </a>&nbsp;
+        <img src="https://img.shields.io/badge/Status-⚡ Active Engineering-22C55E?style=for-the-badge" />
+      </p>
+    </td>
+  </tr>
+</table>
 
 </div>
 
