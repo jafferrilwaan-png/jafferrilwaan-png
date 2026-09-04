@@ -1,39 +1,56 @@
 <div align="center">
 
-<!-- Small logo GIF at top -->
-<img src="./github_animation.gif" width="120" height="120" style="border-radius:50%" alt="Jaffer Rilwaan Logo Animation" />
-
-<br/>
-
-<!-- Animated typing text -->
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=28&duration=2000&pause=800&color=C084FC&center=true&vCenter=true&repeat=true&width=800&height=70&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Disaster+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Accessibility+Systems;7+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
-
-<p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>&nbsp;
-  <a href="mailto:tactical@aurasystem.dev">
-    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>&nbsp;
-  <a href="https://github.com/jafferrilwaan-png?tab=repositories">
-    <img src="https://img.shields.io/badge/GitHub-7%20Projects-9333EA?style=for-the-badge&logo=github&logoColor=white" />
-  </a>&nbsp;
-  <img src="https://img.shields.io/badge/Status-⚡ Active Engineering-22C55E?style=for-the-badge" />
-</p>
+<!-- ══════════ TOP LANDING: BUMBLEBEE GREETING (LEFT) + TYPING HEADER (RIGHT) ══════════ -->
+<table>
+  <tr>
+    <td width="28%" align="center" valign="middle">
+      <img src="./bumblebee_greeting.svg" width="190" alt="Bumblebee Greeting Wave" />
+    </td>
+    <td width="72%" align="left" valign="middle">
+      <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=24&duration=2000&pause=800&color=C084FC&center=false&vCenter=true&repeat=true&width=580&height=60&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Disaster+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Accessibility+Systems;7+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
+      <p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
+      <p>
+        <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386">
+          <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+        </a>&nbsp;
+        <a href="mailto:tactical@aurasystem.dev">
+          <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+        </a>&nbsp;
+        <a href="https://github.com/jafferrilwaan-png?tab=repositories">
+          <img src="https://img.shields.io/badge/GitHub-7%20Projects-9333EA?style=for-the-badge&logo=github&logoColor=white" />
+        </a>&nbsp;
+        <img src="https://img.shields.io/badge/Status-⚡ Active Engineering-22C55E?style=for-the-badge" />
+      </p>
+    </td>
+  </tr>
+</table>
 
 </div>
+
+<!-- ══════════ ANIMATED AURA RADAR HUD ══════════ -->
+<img src="./aura_animated.svg" width="100%" alt="AURA — Live Radar Scanning Interface" />
 
 <img src="./pulse_divider.svg" width="100%" />
 
 ---
 
 <!-- ══════════════════════════════════════════════════════════
-     🧑‍💻 CHARACTER SHOWCASE — 2×2 GRID
+     🧑‍💻 THE ENGINEER BEHIND THE CODE + BUMBLEBEE ACTION
 ══════════════════════════════════════════════════════════ -->
 
-### 🧑‍💻 The Engineer Behind The Code
+<div align="center">
+  <table>
+    <tr>
+      <td width="70%" align="left" valign="middle">
+        <h3>🧑‍💻 The Engineer Behind The Code</h3>
+        <sub>End-to-End Systems Engineering: Sensor DSP • 3D WebGL • Full-Stack Infrastructure</sub>
+      </td>
+      <td width="30%" align="right" valign="middle">
+        <img src="./bumblebee_action.svg" width="220" alt="Bumblebee Action Scanner" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 <table>
   <tr>
@@ -62,12 +79,11 @@
   </tr>
 </table>
 
-
 <img src="./pulse_divider.svg" width="100%" />
 
 ---
 
-<!-- ══════════ MANIFEST ══════════ -->
+<!-- ══════════ MANIFEST: ANIMATED ROBOT WRITING TERMINAL ══════════ -->
 
 <div align="center">
 <img src="./radar_spin.svg" width="80" height="80" />
@@ -75,29 +91,26 @@
 
 ### 📡 Systems Engineering Manifest
 
-```yaml
-╔════════════════════════════════════════════════════════════════════╗
-║  ROLE       : Lead Systems Architect & Full-Stack IoT Engineer     ║
-║  HARDWARE   : ESP32 Dual-Core • SX1262 LoRa Mesh • SM-24 Geophones║
-║  FIRMWARE   : C/C++ Real-Time Sensor DSP & Satellite Telemetry     ║
-║  FRONTEND   : React 18 • TypeScript • Three.js 3D WebGL HUDs       ║
-║  BACKEND    : Node.js • Express REST APIs • MongoDB • Python       ║
-║  MISSION    : Disaster rescue systems, healthcare AI, accessibility║
-║  STATUS     : ⚡ Active — Compiling Firmware & Scaling Production  ║
-╚════════════════════════════════════════════════════════════════════╝
-```
+<div align="center">
+  <img src="./manifest_animated.svg" width="100%" alt="Systems Engineering Manifest Animated Writing" />
+</div>
 
 <img src="./pulse_divider.svg" width="100%" />
 
 ---
 
-<!-- ══════════ PROJECTS ══════════ -->
-
-<div align="center">
-<img src="./projects.jpg" width="95%" alt="Project Showcase" />
-</div>
+<!-- ══════════ PROJECTS: TACTICAL DEPLOYMENT ARRAY ══════════ -->
 
 ### 🚀 Complete Project Arsenal — 7 Live Deployments
+
+<div align="center">
+  <!-- Depicting every project as live telemetry animation -->
+  <img src="./projects_deploy.svg" width="100%" alt="Project Telemetry Deployment Array" />
+  <br/><br/>
+  <img src="./projects.jpg" width="95%" alt="Project Showcase" />
+</div>
+
+<br/>
 
 <table>
   <tr>
@@ -193,23 +206,20 @@
 
 ---
 
-<!-- ══════════ PAC-MAN STREAK ══════════ -->
+<!-- ══════════ LIVE STATS & STREAK ══════════ -->
 
 ### ⚡ Live GitHub Analytics
 
 <div align="center">
 
-<!-- Animated stats panel — always loads, no external service needed -->
 <img src="./stats_panel.svg" width="96%" alt="Live Engineering Stats — Contributions, Streak, Languages" />
 
 <br/><br/>
 
-<!-- Animated contribution graph — fills in cell by cell -->
 <img src="./contribution_graph.svg" width="96%" alt="GitHub Contribution Activity Graph" />
 
 <br/><br/>
 
-<!-- Pac-Man streak card -->
 <img src="./pacman_streak.svg" width="96%" alt="Pac-Man GitHub Streak Stats" />
 
 </div>

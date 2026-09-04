@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 230" width="860" height="230">
+  <defs>
+    <linearGradient id="termBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#040711"/>
+      <stop offset="100%" stop-color="#080C1E"/>
+    </linearGradient>
+    <linearGradient id="armMetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64748B"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <filter id="cyanGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Terminal Window Base -->
+  <rect width="860" height="230" rx="10" fill="url(#termBg)" stroke="#22D3EE" stroke-width="1.2" opacity="0.95"/>
+
+  <!-- Top Titlebar -->
+  <rect x="0" y="0" width="860" height="28" rx="10" fill="#0A0F24"/>
+  <circle cx="20" cy="14" r="4.5" fill="#EF4444"/>
+  <circle cx="36" cy="14" r="4.5" fill="#F59E0B"/>
+  <circle cx="52" cy="14" r="4.5" fill="#10B981"/>
+  <text x="75" y="18" font-family="'Courier New', monospace" font-size="10" fill="#94A3B8" letter-spacing="1">
+    TERMINAL // SYSTEMS_ENGINEERING_MANIFEST.sys
+  </text>
+  <text x="830" y="18" font-family="'Courier New', monospace" font-size="9" fill="#22C55E" text-anchor="end">
+    [LIVE COMPILING]
+  </text>
+
+  <!-- Animated Writing Arm Laser Beam (moves across text lines as it 'writes') -->
+  <g id="robot-pen">
+    <animateTransform attributeName="transform" type="translate"
+      values="720,40; 780,70; 710,105; 760,140; 700,175; 720,40"
+      dur="8s" repeatCount="indefinite" ease="ease-in-out"/>
+    <!-- Mechanical Pen / Arm Node -->
+    <circle cx="0" cy="0" r="12" fill="url(#armMetal)" stroke="#22D3EE" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="6" fill="#0F172A"/>
+    <polygon points="0,-12 18,0 0,12" fill="#334155"/>
+    <circle cx="18" cy="0" r="3" fill="#22D3EE" filter="url(#cyanGlow)">
+      <animate attributeName="r" values="2;5;2" dur="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Laser beam pointing into background -->
+    <line x1="18" y1="0" x2="-220" y2="0" stroke="#22D3EE" stroke-width="1" stroke-dasharray="8 4" opacity="0.4">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="0.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Clean, Perfectly Legible Manifest Code Lines -->
+  <g font-family="'Courier New', monospace" font-size="11.5" xml:space="preserve">
+    <!-- Outer Border -->
+    <text x="24" y="52" fill="#334155">╔═════════════════════════════════════════════════════════════════════════╗</text>
+    
+    <!-- Line 1: Role -->
+    <text x="24" y="74" fill="#64748B">║  <tspan fill="#C084FC" font-weight="bold">ROLE      </tspan> : <tspan fill="#22D3EE">Lead Systems Architect &amp; Full-Stack IoT Engineer      </tspan><tspan fill="#334155">║</tspan></text>
+    
+    <!-- Line 2: Hardware -->
+    <text x="24" y="96" fill="#64748B">║  <tspan fill="#C084FC" font-weight="bold">HARDWARE  </tspan> : <tspan fill="#E2E8F0">ESP32 Dual-Core • SX1262 LoRa Mesh • SM-24 Geophones </tspan><tspan fill="#334155">║</tspan></text>
+    
+    <!-- Line 3: Firmware -->
+    <text x="24" y="118" fill="#64748B">║  <tspan fill="#C084FC" font-weight="bold">FIRMWARE  </tspan> : <tspan fill="#F59E0B">C/C++ Real-Time Sensor DSP &amp; Satellite Telemetry      </tspan><tspan fill="#334155">║</tspan></text>
+    
+    <!-- Line 4: Frontend -->
+    <text x="24" y="140" fill="#64748B">║  <tspan fill="#C084FC" font-weight="bold">FRONTEND  </tspan> : <tspan fill="#38BDF8">React 18 • TypeScript • Three.js 3D WebGL HUDs        </tspan><tspan fill="#334155">║</tspan></text>
+    
+    <!-- Line 5: Backend -->
+    <text x="24" y="162" fill="#64748B">║  <tspan fill="#C084FC" font-weight="bold">BACKEND   </tspan> : <tspan fill="#A78BFA">Node.js • Express REST APIs • MongoDB • Python        </tspan><tspan fill="#334155">║</tspan></text>
+    
+    <!-- Line 6: Mission -->
+    <text x="24" y="184" fill="#64748B">║  <tspan fill="#C084FC" font-weight="bold">MISSION   </tspan> : <tspan fill="#FCD34D">Disaster rescue systems, healthcare AI, accessibility </tspan><tspan fill="#334155">║</tspan></text>
+    
+    <!-- Line 7: Status -->
+    <text x="24" y="206" fill="#64748B">║  <tspan fill="#C084FC" font-weight="bold">STATUS    </tspan> : <tspan fill="#22C55E">⚡ Active — Compiling Firmware &amp; Scaling Production   </tspan><tspan fill="#334155">║</tspan></text>
+    
+    <!-- Bottom Border -->
+    <text x="24" y="222" fill="#334155">╚═════════════════════════════════════════════════════════════════════════╝</text>
+  </g>
+
+  <!-- Glowing Blinking Cursor -->
+  <rect x="710" y="196" width="8" height="13" fill="#22D3EE" filter="url(#cyanGlow)">
+    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+  </rect>
+</svg>
