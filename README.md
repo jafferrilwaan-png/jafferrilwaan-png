@@ -151,7 +151,7 @@
         <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
         <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white"/>
       </p>
-      <a href="https://github.com/jafferrilwaan-png/student-perks-hub"><b>🔗 Repository →</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://student-perks-hub-aj58.vercel.app/"><b>🚀 Live App →</b></a>
+      <a href="https://github.com/jafferrilwaan-png/student-perks-hub"><b>🔗 Repository →</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://ais-pre-gwplkv6xhap2grhvxfrgmz-449260150852.asia-east1.run.app/"><b>🚀 Live App →</b></a>
     </td>
   </tr>
   <tr>
