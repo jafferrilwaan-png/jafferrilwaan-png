@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ══════════ ANIMATED TYPING HEADER ══════════ -->
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=28&duration=2000&pause=800&color=C084FC&center=true&vCenter=true&repeat=true&width=800&height=70&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Transit+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Assistive+Systems;7+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=28&duration=2000&pause=800&color=C084FC&center=true&vCenter=true&repeat=true&width=800&height=70&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Transit+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Assistive+Systems;8+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
 
 <p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
 
@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>&nbsp;
   <a href="https://github.com/jafferrilwaan-png?tab=repositories">
-    <img src="https://img.shields.io/badge/GitHub-7%20Projects-9333EA?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/GitHub-Repositories-9333EA?style=for-the-badge&logo=github&logoColor=white" />
   </a>&nbsp;
   <img src="https://img.shields.io/badge/Status-⚡ Active Engineering-22C55E?style=for-the-badge" />
 </p>
@@ -91,7 +91,7 @@
 <img src="./projects.jpg" width="95%" alt="Project Showcase" />
 </div>
 
-### 🚀 Complete Project Arsenal — 7 Live Deployments
+### 🚀 Complete Project Arsenal — Live Deployments
 
 <table>
   <tr>
@@ -170,14 +170,26 @@
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center" valign="top">
-      <h3>🍽️ Gotham's Table / DV Collection — Web App</h3>
-      <b>Full-Stack Dynamic Catalog & Interactive Application Architecture</b><br/>
-      <p>Interactive web application engineered with modular data schemas, responsive state handling, and dynamic component rendering.</p>
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-      <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white"/>
-      <br/><br/>
+    <td width="50%" valign="top">
+      <h3>🦇 Gotham's Table — Culinary & Menu Platform</h3>
+      <b>Interactive Themed Dining & Digital Menu System</b>
+      <p>Dark-aesthetic culinary web application featuring dynamic menu curation, interactive orders, and responsive UI design.</p>
+      <p>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white"/>
+      </p>
+      <a href="https://github.com/jafferrilwaan-png/gotham-s-table"><b>🔗 Repository →</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛍️ DV Collection — E-Commerce & Catalog</h3>
+      <b>Full-Stack Dynamic Product Catalog & Showcase Architecture</b>
+      <p>Modern product display and catalog management application engineered with modular data schemas, responsive state handling, and dynamic component rendering.</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white"/>
+      </p>
       <a href="https://github.com/jafferrilwaan-png/dvcollection"><b>🔗 Repository →</b></a>
     </td>
   </tr>
