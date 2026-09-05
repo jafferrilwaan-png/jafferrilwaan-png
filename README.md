@@ -1,35 +1,22 @@
 <div align="center">
 
-<!-- ══════════ TOP LANDING: BUMBLEBEE (LEFT) + JAFFER RILWAAN (RIGHT) ══════════ -->
-<table>
-  <tr>
-    <td width="30%" align="center" valign="middle">
-      <a href="./bumblebee_robot_transformers_human_alliance/scene.gltf">
-        <img src="https://img.shields.io/badge/🤖%203D%20MODEL-BUMBLEBEE-F59E0B?style=for-the-badge&logo=blender&logoColor=white" alt="Bumblebee 3D Model" />
-        <br/><br/>
-        <img src="https://img.shields.io/badge/📦%20BROWSE%203D-scene.gltf-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Browse 3D Files" />
-        <br/><br/>
-        <sub><b>⚡ Touch to view 3D Model</b></sub>
-      </a>
-    </td>
-    <td width="70%" align="left" valign="middle">
-      <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=24&duration=2000&pause=800&color=C084FC&center=false&vCenter=true&repeat=true&width=560&height=60&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Disaster+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Accessibility+Systems;7+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
-      <p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
-      <p>
-        <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386">
-          <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-        </a>&nbsp;
-        <a href="mailto:tactical@aurasystem.dev">
-          <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-        </a>&nbsp;
-        <a href="https://github.com/jafferrilwaan-png?tab=repositories">
-          <img src="https://img.shields.io/badge/GitHub-7%20Projects-9333EA?style=for-the-badge&logo=github&logoColor=white" />
-        </a>&nbsp;
-        <img src="https://img.shields.io/badge/Status-⚡ Active Engineering-22C55E?style=for-the-badge" />
-      </p>
-    </td>
-  </tr>
-</table>
+<!-- ══════════ ANIMATED TYPING HEADER ══════════ -->
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=28&duration=2000&pause=800&color=C084FC&center=true&vCenter=true&repeat=true&width=800&height=70&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Transit+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Assistive+Systems;7+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
+
+<p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>&nbsp;
+  <a href="mailto:tactical@aurasystem.dev">
+    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>&nbsp;
+  <a href="https://github.com/jafferrilwaan-png?tab=repositories">
+    <img src="https://img.shields.io/badge/GitHub-7%20Projects-9333EA?style=for-the-badge&logo=github&logoColor=white" />
+  </a>&nbsp;
+  <img src="https://img.shields.io/badge/Status-⚡ Active Engineering-22C55E?style=for-the-badge" />
+</p>
 
 </div>
 
@@ -85,11 +72,11 @@
 ```yaml
 ╔════════════════════════════════════════════════════════════════════╗
 ║  ROLE       : Lead Systems Architect & Full-Stack IoT Engineer     ║
-║  HARDWARE   : ESP32 Dual-Core • SX1262 LoRa Mesh • SM-24 Geophones║
-║  FIRMWARE   : C/C++ Real-Time Sensor DSP & Satellite Telemetry     ║
+║  HARDWARE   : ESP32 Dual-Core • SX1262 LoRa Mesh • Sensor Telemetry║
+║  FIRMWARE   : C/C++ Real-Time Embedded DSP & Satellite Comms       ║
 ║  FRONTEND   : React 18 • TypeScript • Three.js 3D WebGL HUDs       ║
 ║  BACKEND    : Node.js • Express REST APIs • MongoDB • Python       ║
-║  MISSION    : Disaster rescue systems, healthcare AI, accessibility║
+║  MISSION    : Transit tech, healthcare AI, assistive engineering   ║
 ║  STATUS     : ⚡ Active — Compiling Firmware & Scaling Production  ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
@@ -109,89 +96,89 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🛰️ A.U.R.A. — Autonomous Underground Rescue Array</h3>
-      <b>Sub-Surface Cavity & Survivor Detection • SIH 2026</b>
-      <p>Autonomous hardware platform for collapsed-structure rescue. Active 40 kHz ultrasonic ToF scanning, SM-24 piezoelectric geophone DSP, NEO-6M GPS telemetry, and a 3D WebGL tactical HUD.</p>
-      <p>
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Three.js-000?style=flat-square&logo=three.js&logoColor=white"/>
-        <img src="https://img.shields.io/badge/ESP32-C++-red?style=flat-square&logo=espressif&logoColor=white"/>
-        <img src="https://img.shields.io/badge/LoRa-SX1262-8B5CF6?style=flat-square"/>
-      </p>
-      <a href="https://github.com/jafferrilwaan-png/A.U.R.A-System"><b>🔗 A.U.R.A. System →</b></a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🏥 AXON — Healthcare Digital Platform</h3>
-      <b>Centralized EHR & Real-Time Patient Telemetry</b>
-      <p>Secure medical web application for centralized patient records, real-time vital sign analytics, and efficient hospital workflow orchestration.</p>
-      <p>
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
-      </p>
-      <a href="https://github.com/jafferrilwaan-png/AXON"><b>🔗 AXON Platform →</b></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
       <h3>🔥 Agni Paravai — Web Platform</h3>
-      <b>High-Performance Reactive Full-Stack Application</b>
-      <p>Scalable high-concurrency modern web platform with modular component architecture and glassmorphic dark UI.</p>
+      <b>High-Performance Reactive Full-Stack Web Platform</b>
+      <p>Modern reactive web platform with modular component architecture, dynamic state synchronization, and glassmorphic dark UI.</p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
         <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
         <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
         <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white"/>
       </p>
-      <a href="https://github.com/jafferrilwaan-png/agni-paravai"><b>🔗 Agni Paravai →</b></a>
+      <a href="https://github.com/jafferrilwaan-png/agni-paravai"><b>🔗 Repository →</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://agni-paravai-87q6.vercel.app/"><b>🚀 Live App →</b></a>
     </td>
     <td width="50%" valign="top">
-      <h3>🔊 Silent Voice — Accessibility System</h3>
+      <h3>🏥 AXON — Healthcare Platform</h3>
+      <b>Centralized EHR & Real-Time Patient Telemetry</b>
+      <p>Secure clinical management web application for centralized electronic health records, patient vital sign analytics, and hospital workflow orchestration.</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+      </p>
+      <a href="https://github.com/jafferrilwaan-png/AXON"><b>🔗 Repository →</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://axon-lac-psi.vercel.app"><b>🚀 Live App →</b></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🚍 Panimalar Transport & Fleet Management</h3>
+      <b>Transit Scheduling, Dispatching & Logistics Management</b>
+      <p>Enterprise institutional logistics system for real-time bus route tracking, vehicle fleet status monitoring, and driver dispatch orchestration.</p>
+      <p>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Logistics-Fleet-8B5CF6?style=flat-square"/>
+      </p>
+      <a href="https://github.com/jafferrilwaan-png/panimalar-transport-system"><b>🔗 Repository →</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://pbtspanimalar.vercel.app/"><b>🚀 Live App →</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎓 Student Perks Hub — Campus Utility</h3>
+      <b>Student Benefits, Discount Verification & Community Portal</b>
+      <p>Exclusive collegiate utility platform providing authenticated student privilege access, campus merchant discounts, and student service directories.</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white"/>
+      </p>
+      <a href="https://github.com/jafferrilwaan-png/student-perks-hub"><b>🔗 Repository →</b></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔊 Silent Voice — Assistive Speech System</h3>
       <b>Assistive Communication for Speech-Impaired Individuals</b>
-      <p>Assistive portal enabling speech-impaired individuals to communicate through real-time voice synthesis and inclusive interface design.</p>
+      <p>Inclusive accessibility portal enabling individuals with speech impairments to synthesize natural vocal communication through an intuitive symbol interface.</p>
       <p>
         <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
         <img src="https://img.shields.io/badge/Web_Speech_API-4285F4?style=flat-square&logo=google&logoColor=white"/>
         <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
       </p>
-      <a href="https://github.com/jafferrilwaan-png/silent-voice"><b>🔗 Silent Voice →</b></a>
+      <a href="https://github.com/jafferrilwaan-png/silent-voice"><b>🔗 Repository →</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://silent-voice-gamma.vercel.app"><b>🚀 Live App →</b></a>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3>📊 CGPA Calculator — Academic Analytics</h3>
-      <b>Precision Grade Tracking & Semester Predictor</b>
-      <p>Academic grade calculator with weighted GPA computation, target-grade forecasting, and interactive chart visualizations.</p>
+      <b>Precision Grade Tracking & Semester Forecast Engine</b>
+      <p>Academic grade calculation suite featuring weighted GPA algorithms, future grade forecasting targets, and interactive visual trend analysis.</p>
       <p>
         <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
         <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
         <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white"/>
       </p>
-      <a href="https://github.com/jafferrilwaan-png/cgpa-calculator"><b>🔗 CGPA Calculator →</b></a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🌉 Freedom Bridge — Collaboration Hub</h3>
-      <b>Full-Stack Community & Social Utility Platform</b>
-      <p>Glassmorphic collaborative web application with JWT authentication, real-time community features, and scalable NoSQL architecture.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Express-000?style=flat-square&logo=express&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-      </p>
-      <a href="https://github.com/jafferrilwaan-png"><b>🔗 Freedom Bridge →</b></a>
+      <a href="https://github.com/jafferrilwaan-png/cgpa-calculator"><b>🔗 Repository →</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://cgpa-calculator-umber.vercel.app"><b>🚀 Live App →</b></a>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center" valign="top">
-      <h3>🔗 Agni Paravai Extended Build</h3>
-      <b>Enhanced architecture with optimized data pipeline & performance layers.</b><br/>
+      <h3>🍽️ Gotham's Table / DV Collection — Web App</h3>
+      <b>Full-Stack Dynamic Catalog & Interactive Application Architecture</b><br/>
+      <p>Interactive web application engineered with modular data schemas, responsive state handling, and dynamic component rendering.</p>
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
       <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
       <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white"/>
       <br/><br/>
-      <a href="https://github.com/jafferrilwaan-png/agni-paravais"><b>🔗 Extended Build →</b></a>
+      <a href="https://github.com/jafferrilwaan-png/dvcollection"><b>🔗 Repository →</b></a>
     </td>
   </tr>
 </table>
