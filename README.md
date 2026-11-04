@@ -3,7 +3,7 @@
 <!-- ══════════ ANIMATED TYPING HEADER ══════════ -->
 <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=28&duration=2000&pause=800&color=C084FC&center=true&vCenter=true&repeat=true&width=800&height=70&lines=%F0%9F%9B%B0%EF%B8%8F+JAFFER+RILWAAN+V;Lead+Systems+Architect+%E2%80%A2+Full-Stack+%26+IoT+Engineer;3D+WebGL+HUDs+%E2%80%A2+Embedded+Firmware+%E2%80%A2+Sensor+Telemetry;Transit+Tech+%E2%80%A2+Healthcare+AI+%E2%80%A2+Assistive+Systems;8+Live+Deployments+%E2%80%A2+Active+Engineering+%F0%9F%94%A5" alt="Typing" />
 
-<p><b>🎓 Electronics & Communication Engineering — Panimalar Engineering College</b></p>
+<p><b> Electronics & Communication Engineering — Panimalar Engineering College</b></p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/jaffer-rilwaan-b4b803386">
@@ -15,7 +15,7 @@
   <a href="https://github.com/jafferrilwaan-png?tab=repositories">
     <img src="https://img.shields.io/badge/GitHub-Repositories-9333EA?style=for-the-badge&logo=github&logoColor=white" />
   </a>&nbsp;
-  <img src="https://img.shields.io/badge/Status-⚡ Active Engineering-22C55E?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status- Active Engineering-22C55E?style=for-the-badge" />
 </p>
 
 <p align="center">
@@ -37,14 +37,14 @@
      🧑‍💻 THE ENGINEER BEHIND THE CODE
 ══════════════════════════════════════════════════════════ -->
 
-### 🧑‍💻 The Engineer Behind The Code
+###  The Engineer Behind The Code
 
 <table>
   <tr>
     <td width="50%" align="center">
       <img src="./char1.svg" width="320" alt="Software Engineer — Isometric" />
       <br/>
-      <sub><b>⚡ Systems Architect</b> — Full-Stack & IoT Engineering</sub>
+      <sub><b> Systems Architect</b> — Full-Stack & IoT Engineering</sub>
     </td>
     <td width="50%" align="center">
       <img src="./char2.svg" width="320" alt="Programmer — Cuate Style" />
@@ -56,12 +56,12 @@
     <td width="50%" align="center">
       <img src="./char3.svg" width="320" alt="Programmer — Bro Cartoon" />
       <br/>
-      <sub><b>🌐 Frontend Engineer</b> — React, Three.js & WebGL</sub>
+      <sub><b> Frontend Engineer</b> — React, Three.js & WebGL</sub>
     </td>
     <td width="50%" align="center">
       <img src="./char4.svg" width="320" alt="Programmer — Amico Isometric" />
       <br/>
-      <sub><b>🏗️ Backend Architect</b> — Node.js, MongoDB & APIs</sub>
+      <sub><b> Backend Architect</b> — Node.js, MongoDB & APIs</sub>
     </td>
   </tr>
 </table>
@@ -86,7 +86,7 @@
 ║  FRONTEND   : React 18 • TypeScript • Three.js 3D WebGL HUDs       ║
 ║  BACKEND    : Node.js • Express REST APIs • MongoDB • Python       ║
 ║  MISSION    : Transit tech, healthcare AI, assistive engineering   ║
-║  STATUS     : ⚡ Active — Compiling Firmware & Scaling Production  ║
+║  STATUS     :  Active — Compiling Firmware & Scaling Production  ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
