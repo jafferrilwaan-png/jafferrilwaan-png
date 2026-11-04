@@ -49,7 +49,7 @@
     <td width="50%" align="center">
       <img src="./char2.svg" width="320" alt="Programmer — Cuate Style" />
       <br/>
-      <sub><b>🛰️ Embedded Hardware</b> — ESP32 & Sensor Firmware</sub>
+      <sub><b> Embedded Hardware</b> — ESP32 & Sensor Firmware</sub>
     </td>
   </tr>
   <tr>
