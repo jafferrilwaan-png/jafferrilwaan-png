@@ -20,10 +20,10 @@
 
 <p align="center">
   <a href="./bumblebee_robot_transformers_human_alliance/scene.gltf">
-    <img src="https://img.shields.io/badge/🤖%203D%20Model-Bumblebee%20Alliance%20(GLTF%20%2B%20PBR)-F59E0B?style=for-the-badge&logo=blender&logoColor=white" />
+    <img src="https://img.shields.io/badge/%203D%20Model-Bumblebee%20Alliance%20(GLTF%20%2B%20PBR)-F59E0B?style=for-the-badge&logo=blender&logoColor=white" />
   </a>&nbsp;
   <a href="./bumblebee_robot_transformers_human_alliance">
-    <img src="https://img.shields.io/badge/📦%20Repository%20Files-Browse%203D%20Package-22D3EE?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/%20Repository%20Files-Browse%203D%20Package-22D3EE?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
@@ -34,7 +34,7 @@
 ---
 
 <!-- ══════════════════════════════════════════════════════════
-     🧑‍💻 THE ENGINEER BEHIND THE CODE
+      THE ENGINEER BEHIND THE CODE
 ══════════════════════════════════════════════════════════ -->
 
 ###  The Engineer Behind The Code
@@ -100,7 +100,7 @@
 <img src="./projects.jpg" width="95%" alt="Project Showcase" />
 </div>
 
-### 🚀 Complete Project Arsenal — Live Deployments
+###  Complete Project Arsenal — Live Deployments
 
 <table>
   <tr>
