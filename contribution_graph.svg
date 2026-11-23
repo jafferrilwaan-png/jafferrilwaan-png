@@ -92,6 +92,7 @@
     <rect x="316" y="88" width="9" height="9" rx="2" fill="#26a641" filter="url(#glow)"><animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" begin="0.8s" repeatCount="indefinite"/></rect>
     <rect x="316" y="99" width="9" height="9" rx="2" fill="#0d1117"/>
     <rect x="316" y="110" width="9" height="9" rx="2" fill="#0d1117"/>
+     <rect x="316" y="110" width="9" height="9" rx="2" fill="#0d1117"/> <rect x="316" y="110" width="9" height="9" rx="2" fill="#0d1117"/> <rect x="316" y="110" width="9" height="9" rx="2" fill="#0d1117"/> <rect x="316" y="110" width="9" height="9" rx="2" fill="#0d1117"/>
   </g>
 
   <!-- Legend -->
